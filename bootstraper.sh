@@ -2,6 +2,8 @@
 
 echo "-------> Determining package manager"
 
+DOCUMENTS_DIR="$HOME/Documents/repositories"
+
 PACKAGE_MANAGER=""
 
 if [ -x "$(command -v apt-get)" ] ; then
@@ -49,7 +51,7 @@ fi
 
 echo "-------> Creating base path"
 
-mkdir -p $HOME/Documents/perso/
+mkdir -p $DOCUMENTS_DIR
 
 echo "-------> Checking for ssh key"
 
@@ -60,19 +62,20 @@ fi
 
 echo "-------> Cloning repo"
 
-cd $HOME/Documents/perso
+cd $DOCUMENTS_DIR
 
-if [ ! -d $HOME/Documents/perso/dotfiles ] ; then
-  git clone git@github.com:johnsudaar/dotfiles.git
+DOTFILES_HOME=$HOME/Documents/perso/dotfiles/
+
+if [ ! -d $DOTFILES_HOME ] ; then
+  git clone git@github.com:EtienneM/dotfiles.git
 fi
 
-if [ ! -d $HOME/Documents/perso/dotfiles ] ; then
+if [ ! -d $DOTFILES_HOME ] ; then
   echo "         Fail to clone repo"
   exit 1
 fi
 
 echo "-------> Loading base libraries"
-DOTFILES_HOME=$HOME/Documents/perso/dotfiles/
 
 source $DOTFILES_HOME/libraries/bootstrap.sh
 
