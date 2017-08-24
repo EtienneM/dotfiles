@@ -64,7 +64,7 @@ echo "-------> Cloning repo"
 
 cd $DOCUMENTS_DIR
 
-DOTFILES_HOME=$HOME/Documents/perso/dotfiles/
+DOTFILES_HOME=$DOCUMENTS_DIR/dotfiles/
 
 if [ ! -d $DOTFILES_HOME ] ; then
   git clone git@github.com:EtienneM/dotfiles.git
