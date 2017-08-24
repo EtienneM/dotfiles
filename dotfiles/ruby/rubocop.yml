@@ -6,3 +6,7 @@ FrozenStringLiteralComment:
   Enabled: false
 Documentation:
   Enabled: false
+TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+TrailingCommaInArguments:
+  EnforcedStyleForMultiline: consistent_comma

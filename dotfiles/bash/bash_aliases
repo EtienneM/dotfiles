@@ -1,0 +1,27 @@
+alias l='ls -CF'
+alias ls='ls -h --color=auto'
+alias ll='ls -l'
+alias sudovim='sudo vim'
+alias grep='grep --color=auto'
+alias open='gnome-open 2>/dev/null '
+alias repo='cd ~/These/repositories/'
+tm() {
+	if [ -z $1 ]; then
+		list=`byobu-tmux ls 2> /dev/null`
+		if [ $? -eq 1 ]; then
+			echo "Usage: tm <session>";
+		else
+			nb=`echo "$list" | wc -l`
+			if [ $nb == "1" ]; then
+				byobu-tmux attach
+			else
+				echo "Select one of these sessions";
+				byobu-tmux ls;
+			fi
+		fi
+		return 1;
+	else
+		(byobu-tmux has -t $1 &> /dev/null) && byobu-tmux attach -t $1 || byobu-tmux new -s $1
+	fi
+}
+

@@ -11,15 +11,38 @@ zsh/zshrc .zshrc
 # VIM
 
 vim/init.vim .config/nvim/init.vim
+vim/spell .config/nvim/spell
 
 # TMUX
 
 tmux/tmux.conf .tmux.conf
+tmux/tmuxinator .tmuxinator
 
 # Git
 
 git/gitconfig .gitconfig
+git/gitignore .gitignore
 
 # Ruby
 
 ruby/rubocop.yml .rubocop.yml
+
+# SSH
+
+ssh/known_hosts .ssh/known_hosts
+ssh/ssh_config .ssh/ssh_config
+
+# fonts
+# TODO There is still some things to do in order to install the fonts
+
+fonts .fonts
+
+# Yaourt
+
+yaourtrc .yaourtrc
+
+# pacman
+#
+# TODO How to make it work?
+#
+# pacman.conf /etc/pacman.conf

@@ -1,9 +1,1 @@
-# vim: filetype=zsh
-
 eval "$(rbenv init -)"
-eval "$(ndenv init -)"
-if [[ ! -n $TMUX ]] ; then
-    tmux
-fi
-
-

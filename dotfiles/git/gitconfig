@@ -1,5 +1,23 @@
+[color]
+  diff = auto
+  status = auto
+  branch = auto
 [user]
-	email = john@scalingo.com
-	name = Jonathan Hurter
+  name = Étienne Michon
+  email = etienne@scalingo.com
+[alias]
+  diff = diff --word-diff=color
+  ci = commit
+  co = checkout
+  st = status
+  br = branch
+  pr = pull-request
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
+  l  = ! git lg
+[core]
+  editor = nvim
+  excludesfile = /home/emichon/.gitignore
 [push]
-	default = simple
+  default = simple
+[url "git@github.com:"]
+  insteadOf = https://github.com/

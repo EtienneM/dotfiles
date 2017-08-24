@@ -1,26 +1,16 @@
-# vim: filetype=zsh
+export BUILDPACKS_PATH="$SCALINGO_HOME/appsdeck-builder/buildpacks"
+export SCALINGO_HOME="$HOME/Documents/Scalingo"
+export GOPATH=$SCALINGO_HOME/golang
 
-alias scavpn="cd $HOME/Documents/vpn && sudo openvpn $HOME/Documents/vpn/john@scalingo.ovpn"
+alias dc="docker-compose"
 
-# API aliases
+alias gogo="$SCALINGO_HOME/tools-and-hacks/scalingo-upgrader/scalingo-upgrader"
+alias dcurl="$SCALINGO_HOME/tools-and-hacks/dcurl/dcurl"
+alias repo_checker="$SCALINGO_HOME/tools-and-hacks/repo_checker/repo_checker.rb"
+
 alias sscalingo="SSH_HOST=staging.scalingo.com:22 SCALINGO_API_URL=https://api-staging.scalingo.com scalingo"
 alias dscalingo="SCALINGO_API_URL=http://localhost:3001 scalingo"
 
-# Directory configuration
-alias sg='cd $HOME/gocode/src/github.com/Scalingo'
-alias sc='cd $HOME/Documents/Scalingo'
+alias detcdctl="docker run quay.io/coreos/etcd:v3.1.7 etcdctl --endpoints http://172.17.0.1:2379"
+alias dmongo="docker run mongo:3.2 mongo"
 
-# Custom scripts
-alias check='$SCALINGO_HOME/tools-and-hacks/repo_checker/repo_checker.rb'
-alias gogo='$SCALINGO_HOME/tools-and-hacks/scalingo-upgrader/scalingo-upgrader'
-alias dcurl='$SCALINGO_HOME/tools-and-hacks/dcurl/dcurl'
-
-alias infra="tmuxinator containers"
-
-# Appsdeck repo and builder configuration
-export BUILDPACKS_PATH=/home/john/Documents/Scalingo/appsdeck-builder/buildpacks
-export BASE_REPO_PATH=/home/john/Documents/Scalingo/appsdeck-builder/docker
-
-# GOGO Configuration
-export SCALINGO_HOME=/home/john/Documents/Scalingo/
-export SCALINGO_REPOS_JSON=$SCALINGO_HOME/internal-documentation/

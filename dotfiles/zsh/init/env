@@ -1,15 +1,8 @@
-# vim: filetype=zsh
-
-export GOPATH="$HOME/gocode"
-export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
-export PATH=$PATH:$HOME/Documents/cli-tools/perso
-export PATH=$PATH:$HOME/Documents/cli-tools/robomongo/bin
-
+export DOTFILES_HOME="$HOME/Documents/repositories/dotfiles"
 
 export PATH="$HOME/.rbenv/bin:$PATH"
-export PATH="$HOME/.ndenv/bin:$PATH"
+export PATH="$GOPATH/bin:$PATH"
 
-
+# The `hub` config file is generated after a successful connection to GitHub using the `hub` CLI
+# tool.
 export GITHUB_TOKEN=$(grep auth_token ~/.config/hub | cut -d':' -f2 | tr -d ' ')
-
-export DOTFILES_HOME="$HOME/Documents/perso/dotfiles/"
