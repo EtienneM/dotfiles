@@ -11,7 +11,7 @@ if [ -f /usr/local/bin/docker-compose ] ; then
 fi
 
 log "Downloading docker-compose version $version"
-curl -sL https://github.com/docker/compose/releases/download/1.15.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+curl -sL https://github.com/docker/compose/releases/download/$version/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
 
 failFast $? "Fail to download docker-compose"
 

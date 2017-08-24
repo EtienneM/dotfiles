@@ -27,7 +27,6 @@ if [ $? -eq 0 ] ; then
   exit 0
 else
   rbenv install $version
-  rbenv global $version
 fi
 
 success "Rbenv installed"

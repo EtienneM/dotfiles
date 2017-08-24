@@ -83,7 +83,9 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 
 source ~/.zsh/init/alias
 source ~/.zsh/init/env
+
 source ~/.zsh/init/scalingo
+source ~/.bin/tmuxinator.zsh
 
 source ~/.zsh/init/startup
 

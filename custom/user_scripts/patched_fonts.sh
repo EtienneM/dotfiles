@@ -1,12 +1,13 @@
 #!/bin/bash
 
-if [ -d $HOME/Documents/cli-tools/fonts ] ; then
+if [ -d $HOME/.local/share/fonts ] ; then
   log "Patched fonts installed. Skipping..."
   exit 0
 else
-  git clone https://github.com/powerline/fonts.git --depth=1 $HOME/Documents/cli-tools/fonts
-  ~/Documents/cli-tools/fonts/install.sh
+  git clone https://github.com/powerline/fonts.git --depth=1 /tmp/fonts
+  /tmp/fonts/install.sh
   failFast $? "Fail to install patched fonts"
+  rm -r /tmp/fonts
 fi
 
 success "Patched fonts installed"
