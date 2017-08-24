@@ -1,12 +1,11 @@
 #!/bin/bash
 
-MANAGER=$1
 export PROJECT_ROOT="$(dirname "$0")/../"
 
 source $PROJECT_ROOT/libraries/bootstrap.sh
 load $PROJECT_ROOT/libraries
 
-manager=${MANAGER:-pacman}
+manager=${1:-pacman}
 
 info "Starting with $manager package manager"
 info "You may be asked for sudo access"
