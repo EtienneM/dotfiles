@@ -41,8 +41,7 @@ fonts .fonts
 
 yaourtrc .yaourtrc
 
-# pacman
-#
-# TODO How to make it work?
-#
-# pacman.conf /etc/pacman.conf
+# Transmission
+
+transmission.json .config/transmission/settings.json
+
