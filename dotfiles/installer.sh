@@ -22,11 +22,12 @@ IFS=$'\n'
 
 info "Starting dotfiles synchronisation"
 
+# Loop through every line in the `map` file, except empty and comment
 for line in $( sed -e '/^$/d' -e '/^\#.*$/d' $BASEDIR/map) ; do
-  src=$(echo $line | cut -d' ' -f1)
-  dst=$(echo $line | cut -d' ' -f2)
+  src=$(echo $line | tr -s ' ' | cut -d' ' -f1)
+  dst=$(echo $line | tr -s ' ' | cut -d' ' -f2)
 
-  ln -s $BASEDIR/$src $HOME_DIR/$dst
+  [ ! -e $HOME_DIR/$dst ] && ln -s $BASEDIR/$src $HOME_DIR/$dst
 done
 
 IFS=$OLD_IFS
