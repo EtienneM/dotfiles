@@ -41,6 +41,13 @@ fonts .fonts
 
 yaourtrc .yaourtrc
 
+# Atom
+
+atom/config.cson   .atom/config.cson
+atom/init.coffee   .atom/init.coffee
+atom/keymap.cson   .atom/keymap.cson
+atom/snippets.cson .atom/snippets.cson
+
 # Transmission
 
 transmission.json .config/transmission/settings.json
