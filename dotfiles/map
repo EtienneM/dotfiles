@@ -24,7 +24,7 @@ ruby/rubocop.yml .rubocop.yml
 
 # SSH
 ssh/known_hosts .ssh/known_hosts
-ssh/ssh_config  .ssh/ssh_config
+ssh/ssh_config  .ssh/config
 
 # fonts
 # TODO There is still some things to do in order to install the fonts
