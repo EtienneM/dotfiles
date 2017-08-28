@@ -1,6 +1,4 @@
 alias l='ls -CF'
 alias git=hub
 alias diff=colordiff
-alias exa='exa -l'
 alias grep="grep --exclude-dir=vendor --exclude-dir=.git --color"
-

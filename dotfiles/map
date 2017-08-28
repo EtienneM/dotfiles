@@ -3,52 +3,44 @@
 # The mappings are in the form:
 # PATH_FROM_THE_DOTFILE_DIRECTORY PATH_FROM_THE_HOME_DIRECTORY
 
-# ZSH
-
-zsh/init .zsh/init
+# ZSH
+zsh/init  .zsh/init
 zsh/zshrc .zshrc
 
 # VIM
-
 vim/init.vim .config/nvim/init.vim
-vim/spell .config/nvim/spell
+vim/spell    .config/nvim/spell
 
 # TMUX
-
-tmux/tmux.conf .tmux.conf
+tmux/tmux.conf  .tmux.conf
 tmux/tmuxinator .tmuxinator
 
 # Git
-
 git/gitconfig .gitconfig
 git/gitignore .gitignore
 
 # Ruby
-
 ruby/rubocop.yml .rubocop.yml
 
 # SSH
-
 ssh/known_hosts .ssh/known_hosts
-ssh/ssh_config .ssh/ssh_config
+ssh/ssh_config  .ssh/ssh_config
 
 # fonts
 # TODO There is still some things to do in order to install the fonts
-
 fonts .fonts
 
 # Yaourt
-
 yaourtrc .yaourtrc
 
 # Atom
-
 atom/config.cson   .atom/config.cson
 atom/init.coffee   .atom/init.coffee
 atom/keymap.cson   .atom/keymap.cson
 atom/snippets.cson .atom/snippets.cson
 
 # Transmission
-
 transmission.json .config/transmission/settings.json
 
+# Grc
+grc .grc
