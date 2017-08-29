@@ -19,3 +19,5 @@ offline
 workflow
 SIGTERM
 app
+plugin
+plugins
