@@ -87,6 +87,9 @@ source ~/.zsh/init/env
 source ~/.zsh/init/scalingo
 source ~/.bin/tmuxinator.zsh
 
+export fpath=(~/.zsh/completions $fpath)
+autoload -Uz compinit && compinit
+
 source ~/.zsh/init/startup
 
 if [[ -d $HOME/.scalingo ]]; then
