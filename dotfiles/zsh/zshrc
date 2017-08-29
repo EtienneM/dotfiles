@@ -87,17 +87,15 @@ source ~/.zsh/init/env
 source ~/.zsh/init/scalingo
 source ~/.bin/tmuxinator.zsh
 
-source ~/.zsh/init/startup
-
 if [[ -d $HOME/.scalingo ]]; then
 	[[ -f $HOME/.scalingo/tokens-dev.sh ]] && source $HOME/.scalingo/tokens-dev.sh
 	[[ -f $HOME/.scalingo/tokens-prod.sh ]] && source $HOME/.scalingo/tokens-prod.sh
 fi
 
 # Auto completions
-for f in $HOME/.zsh/completions/*; do
-  source $f
-done
+source ~/.zsh/init/autocomplete
 
 # Modify ZLE widget key binding (cf. man zshzle)
 bindkey ^W forward-word
+
+source ~/.zsh/init/startup

@@ -1,0 +1,5 @@
+# vim: filetype=zsh
+
+for f in $HOME/.zsh/completions/*; do
+  source $f
+done
