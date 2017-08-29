@@ -1,6 +1,7 @@
 export BUILDPACKS_PATH="$SCALINGO_HOME/appsdeck-builder/buildpacks"
 export SCALINGO_HOME="$HOME/Documents/Scalingo"
 export GOPATH=$SCALINGO_HOME/golang
+export SCALINGO_GOPATH=$GOPATH/src/github.com/Scalingo
 
 alias dc="docker-compose"
 
