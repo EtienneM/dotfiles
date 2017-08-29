@@ -33,3 +33,4 @@ openvpn,openvpn
 # Utilities
 htop,htop
 grc,grc
+,httpie
