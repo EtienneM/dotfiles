@@ -87,15 +87,17 @@ source ~/.zsh/init/env
 source ~/.zsh/init/scalingo
 source ~/.bin/tmuxinator.zsh
 
-export fpath=(~/.zsh/completions $fpath)
-autoload -Uz compinit && compinit
-
 source ~/.zsh/init/startup
 
 if [[ -d $HOME/.scalingo ]]; then
 	[[ -f $HOME/.scalingo/tokens-dev.sh ]] && source $HOME/.scalingo/tokens-dev.sh
 	[[ -f $HOME/.scalingo/tokens-prod.sh ]] && source $HOME/.scalingo/tokens-prod.sh
 fi
+
+# Auto completions
+for f in $HOME/.zsh/completions/*; do
+  source $f
+done
 
 # Modify ZLE widget key binding (cf. man zshzle)
 bindkey ^W forward-word
