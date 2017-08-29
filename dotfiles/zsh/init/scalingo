@@ -17,3 +17,5 @@ alias to_nsq='docker run -it nsqio/nsq to_nsq'
 
 # Grc
 alias gt='grc go test'
+
+alias scavpn="cd ~/.scalingo/vpn_scalingo_agora_hosting && sudo openvpn --config etienne@vpn-internal-1.scalingo.com.ovpn"

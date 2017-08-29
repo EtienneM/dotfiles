@@ -2,3 +2,4 @@ alias l='ls -CF'
 alias git=hub
 alias diff=colordiff
 alias grep="grep --exclude-dir=vendor --exclude-dir=.git --color"
+alias master="git checkout master"
