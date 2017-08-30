@@ -44,3 +44,6 @@ transmission.json .config/transmission/settings.json
 
 # Grc
 grc .grc
+
+# Ack
+ackrc .ackrc

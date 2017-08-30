@@ -1,0 +1,2 @@
+# Disable regexp by default in ack
+--literal
