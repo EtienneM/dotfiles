@@ -94,6 +94,7 @@ Plug 'tpope/vim-rails'          " Rails
 Plug 'mustache/vim-mustache-handlebars' " Handlebars
 Plug 'gabrielelana/vim-markdown' " Markdown
 Plug 'lervag/vimtex'             " LaTeX
+Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'fishbullet/deoplete-ruby'
 Plug 'zchee/deoplete-go', { 'do': 'make'}
@@ -163,3 +164,5 @@ autocmd FileType go nmap <C-b> :<C-u>call <SID>build_go_files()<CR>
 " Deoplete configuration
 let g:deoplete#enable_at_startup = 1
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+
+let g:deoplete#sources#go#pointer = 1 " Support pointer (*) match.
