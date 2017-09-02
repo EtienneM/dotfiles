@@ -1445,7 +1445,7 @@
 #lua-config=
 
 # Password (string)
-#http-password=
+http-password=1234
 
 # Source directory (string)
 #http-src=
@@ -3611,7 +3611,7 @@ qt-privacy-ask=0
 #audio-desync=0
 
 # Audio resampler (string)
-#audio-resampler=
+audio-resampler=any
 
 # Replay gain mode (string)
 #audio-replay-gain-mode=none
@@ -4130,7 +4130,7 @@ metadata-network-access=1
 #intf=
 
 # Extra interface modules (string)
-#extraintf=
+extraintf=lua:http
 
 # Control interfaces (string)
 #control=
