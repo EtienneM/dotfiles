@@ -34,3 +34,5 @@ openvpn,openvpn
 htop,htop
 grc,grc
 httpie,httpie
+sshfs,sshfs
+,xsel
