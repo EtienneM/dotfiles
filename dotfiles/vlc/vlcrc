@@ -1448,7 +1448,7 @@
 http-password=1234
 
 # Source directory (string)
-#http-src=
+http-src=/home/emichon
 
 # Directory index (boolean)
 #http-index=0
