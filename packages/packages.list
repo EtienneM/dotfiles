@@ -23,6 +23,8 @@ firefox,firefox
 jq,jq
 ack,ack
 xclip,xclip
+,qt4 # For vlc GUI
+vlc,vlc
 
 # Docker and VMS
 docker-ce,docker
