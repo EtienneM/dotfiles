@@ -13,7 +13,7 @@ alias sscalingo="SSH_HOST=staging.scalingo.com:22 SCALINGO_API_URL=https://api-s
 alias dscalingo="SCALINGO_API_URL=http://localhost:3001 scalingo"
 
 alias detcdctl="docker run -it quay.io/coreos/etcd:v3.1.7 etcdctl --endpoints http://172.17.0.1:2379"
-alias dmongo="docker run -it mongo:3.2 mongo"
+alias dmongo="docker run -it mongo:3.4 mongo"
 alias to_nsq='docker run -it nsqio/nsq to_nsq'
 
 # Grc
