@@ -39,3 +39,7 @@ windows:
         - cd ${SCALINGO_GOPATH}/metrics-storage-service && docker-compose up
         - cd ${SCALINGO_GOPATH}/container-metrics-service && docker-compose up
   - logs: cd ${SCALINGO_GOPATH}/logs-service && docker-compose up
+  - misc:
+    layout: tiled
+    panes:
+      - docker run -p 4171:4171 nsqio/nsq /nsqadmin --lookupd-http-address=172.17.0.1:4161
