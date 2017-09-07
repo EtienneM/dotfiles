@@ -25,6 +25,7 @@ ack,ack
 xclip,xclip
 ,qt4 # For vlc GUI
 vlc,vlc
+,texlive-most
 
 # Docker and VMS
 docker-ce,docker
