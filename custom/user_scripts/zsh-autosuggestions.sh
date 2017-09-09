@@ -1,5 +1,7 @@
 #!/bin/bash
 
+if [ -z "$ZSH_CUSTOM" ]; then fatal "ZSH_CUSTOM undefined"; fi
+
 if [ -d $ZSH_CUSTOM/plugins/zsh-autosuggestions ] ; then
   log "Zsh-Autosuggestions already installed. Skipping..."
   exit 0
