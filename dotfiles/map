@@ -3,6 +3,11 @@
 # The mappings are in the form:
 # PATH_FROM_THE_DOTFILE_DIRECTORY PATH_FROM_THE_HOME_DIRECTORY
 
+# Bash
+bash/bashrc       .bashrc
+bash/bash_aliases .bash_aliases
+bash/completions  .bash_completions
+
 # ZSH
 zsh/init  .zsh/init
 zsh/zshrc .zshrc

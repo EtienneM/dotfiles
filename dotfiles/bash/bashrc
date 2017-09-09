@@ -89,6 +89,10 @@ fi
 export SVN_EDITOR=nvim
 export EDITOR=nvim
 
+for f in $HOME/.bash_completions/*; do
+  source $f
+done
+
 #---------------
 # Scalingo tools
 #---------------
