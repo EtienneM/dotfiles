@@ -15,6 +15,7 @@ alias dscalingo="SCALINGO_API_URL=http://localhost:3001 scalingo"
 alias detcdctl="docker run -it quay.io/coreos/etcd:v3.1.7 etcdctl --endpoints http://172.17.0.1:2379"
 alias dmongo="docker run -it mongo:3.4 mongo"
 alias dpsql="docker run -it postgres:9.6 psql"
+alias dinflux="docker run -it influxdb:1.2 influx"
 alias to_nsq='docker run -it nsqio/nsq to_nsq'
 
 # Grc
