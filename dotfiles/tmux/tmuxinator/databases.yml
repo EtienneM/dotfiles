@@ -39,6 +39,7 @@ windows:
         - cd ${SCALINGO_GOPATH}/metrics-storage-service && docker-compose up
         - cd ${SCALINGO_GOPATH}/container-metrics-service && docker-compose up
   - logs: cd ${SCALINGO_GOPATH}/logs-service && docker-compose up
+  - fistful: cd $(GOPATH)/src/github.com/Scalingo/fistful-proxy-core && docker-compose up
   - misc:
     layout: tiled
     panes:
