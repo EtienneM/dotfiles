@@ -23,9 +23,11 @@ firefox,firefox
 jq,jq
 ack,ack
 xclip,xclip
-,qt4 # For vlc GUI
-vlc,vlc
 ,texlive-most
+ntfs-3g,ntfs-3g
+steam,steam
+,qt4
+vlc,vlc
 
 # Docker and VMS
 docker-ce,docker
@@ -40,3 +42,4 @@ grc,grc
 httpie,httpie
 sshfs,sshfs
 ,xsel
+,zotero
