@@ -29,3 +29,6 @@ Scalingo's
 OpenSSH
 VPN
 OpenVPN
+Redis
+buildpack
+HTTPS
