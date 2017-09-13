@@ -16,6 +16,7 @@ alias detcdctl="docker run -it quay.io/coreos/etcd:v3.1.7 etcdctl --endpoints ht
 alias dmongo="docker run -it mongo:3.4 mongo"
 alias dpsql="docker run -it postgres:9.6 psql"
 alias dinflux="docker run -it influxdb:1.2 influx"
+alias dmysql="docker run -it mysql:5.7 mysql"
 alias to_nsq='docker run -it nsqio/nsq to_nsq'
 
 # Grc
