@@ -37,9 +37,14 @@ openvpn,openvpn
 ,nfs-utils
 
 # Utilities
+,gnu-netcat
 htop,htop
 grc,grc
 httpie,httpie
 sshfs,sshfs
 ,xsel
 ,zotero
+
+# Latex
+latex-make,latex-make
+inkscape,inkscape
