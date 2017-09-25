@@ -4,6 +4,7 @@
 # Source code management
 git,git
 gitg,gitg
+,bzr
 ,hub
 
 # Text editor
@@ -35,6 +36,7 @@ docker-ce,docker
 # Networking
 openvpn,openvpn
 ,nfs-utils
+,sysstat
 
 # Utilities
 ,gnu-netcat
@@ -44,7 +46,9 @@ httpie,httpie
 sshfs,sshfs
 ,xsel
 ,zotero
+,yed
 
 # Latex
 latex-make,latex-make
 inkscape,inkscape
+,texlive-core
