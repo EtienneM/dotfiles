@@ -1,11 +1,16 @@
+[advice]
+  statusHints = true
 [color]
   diff = auto
   status = auto
   branch = auto
+  ui = true
 [user]
   name = Étienne Michon
   email = etienne@scalingo.com
+  signingkey = 3D0A46951838A869
 [alias]
+  # Shortcuts
   diff = diff --word-diff=color
   ci = commit
   co = checkout
@@ -14,6 +19,8 @@
   pr = pull-request
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
   l  = ! git lg
+  # Spellings
+  emrge = merge
 [core]
   editor = nvim
   excludesfile = /home/emichon/.gitignore
@@ -21,3 +28,5 @@
   default = simple
 [url "git@github.com:"]
   insteadOf = https://github.com/
+[commit]
+  gpgsign = true
