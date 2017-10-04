@@ -27,6 +27,8 @@ for line in $( sed -e '/^$/d' -e '/^\#.*$/d' $BASEDIR/map) ; do
   src=$(echo $line | tr -s ' ' | cut -d' ' -f1)
   dst=$(echo $line | tr -s ' ' | cut -d' ' -f2)
 
+  mkdir -p $HOME_DIR/$(dirname $dst)
+
   [ ! -e $HOME_DIR/$dst ] && ln -s $BASEDIR/$src $HOME_DIR/$dst
 done
 

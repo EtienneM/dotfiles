@@ -55,3 +55,6 @@ ackrc .ackrc
 
 # VLC
 vlc .config/vlc
+
+# htop
+htoprc .config/htop/htoprc
