@@ -21,6 +21,7 @@
   l  = ! git lg
   # Spellings
   emrge = merge
+  t = st
 [core]
   editor = nvim
   excludesfile = /home/emichon/.gitignore
