@@ -48,6 +48,10 @@ sshfs,sshfs
 ,zotero
 ,yed
 
+# Printers
+,cups
+,gtk3-print-backends
+
 # Latex
 latex-make,latex-make
 inkscape,inkscape
