@@ -22,6 +22,7 @@
   # Spellings
   emrge = merge
   t = st
+  s = st
 [core]
   editor = nvim
   excludesfile = /home/emichon/.gitignore
