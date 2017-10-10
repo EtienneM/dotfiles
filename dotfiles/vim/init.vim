@@ -109,8 +109,7 @@ colorscheme NeoSolarized
 """""""""""
 " Neomake "
 """""""""""
-let g:syntastic_ruby_checkers = ['rubocop', 'mri']
-let g:neomake_ruby_enabled_makers = ['rubocop', 'mri']
+let g:neomake_ruby_enabled_makers = ['rubocop', 'mri', 'bibtex', 'go vet', 'golint', 'go']
 autocmd! BufWritePost * Neomake
 
 """"""""""""
