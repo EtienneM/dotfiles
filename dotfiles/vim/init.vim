@@ -53,7 +53,7 @@ set wildmenu " visual autocomplete for command menu
 
 "set showmatch " highlight matching [{()}]
 
-  "Activate spell check
+  " Default spell check language is english
 setlocal spell spelllang=en_us
 set nospell
   " "CTRL+l l" will open the list of alternatives
@@ -109,7 +109,7 @@ colorscheme NeoSolarized
 """""""""""
 " Neomake "
 """""""""""
-let g:neomake_ruby_enabled_makers = ['rubocop', 'mri', 'bibtex', 'go vet', 'golint', 'go']
+let g:neomake_ruby_enabled_makers = ['rubocop', 'mri']
 autocmd! BufWritePost * Neomake
 
 """"""""""""
@@ -147,9 +147,10 @@ let g:go_highlight_methods = 1
 
 " Whenever we save, call
 let g:go_fmt_command = "goimports"
-" let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
-let g:go_metalinter_autosave_enabled = ['vet', 'errcheck']
-let g:go_metalinter_autosave = 1 " Use the above-mentioned linter at each save
+let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
+" The following lines are now handled asynchronously by Neomake
+" let g:go_metalinter_autosave_enabled = ['vet', 'errcheck']
+" let g:go_metalinter_autosave = 1 " Use the above-mentioned linter at each save
 
 " Keyboard shortcut
 	" next and previous error
