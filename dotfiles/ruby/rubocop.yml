@@ -1,7 +1,9 @@
 AllCops:
-  TargetRubyVersion: 2.4
+  TargetRubyVersion: 2.3
 MethodLength:
   Max: 25
+LineLength:
+  Max: 100
 NegatedIf:
   Enabled: false
 FrozenStringLiteralComment:
