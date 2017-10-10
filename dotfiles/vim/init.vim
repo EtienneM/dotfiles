@@ -20,7 +20,10 @@ autocmd BufWritePre * %s/\s\+$//e
 """""""""""""""
 "" UI Config. "
 """""""""""""""
-let g:airline_powerline_fonts = 1
+set noshowmode " Do not display "-- INSERT --" as it is handled by lightline
+let g:lightline = {
+      \ 'colorscheme': 'jellybeans',
+      \ }
   "The following lets searches be incremental.  So in normal mode, /sec will go to the first 'section', for example.  I don't have to type /section for that:
 set incsearch " search as characters are entered
 set hlsearch  " highlight matches
@@ -81,25 +84,34 @@ map <C-j> gq
 " PLUGIN  "
 """""""""""
 call plug#begin()
-Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
+Plug 'itchyny/lightline.vim'
 Plug 'iCyMind/NeoSolarized'
-Plug 'vim-airline/vim-airline'
+
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
-Plug 'ngmy/vim-rubocop'
 Plug 'mileszs/ack.vim'          " Grep into a project source code
-Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' } " Go language
+Plug 'neomake/neomake'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
 Plug 'kchmck/vim-coffee-script' " Coffee script
-Plug 'tpope/vim-rails'          " Rails
 Plug 'mustache/vim-mustache-handlebars' " Handlebars
 Plug 'gabrielelana/vim-markdown' " Markdown
 Plug 'lervag/vimtex'             " LaTeX
-Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'fishbullet/deoplete-ruby'
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' } " Go language
 Plug 'zchee/deoplete-go', { 'do': 'make'}
+Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
+Plug 'fishbullet/deoplete-ruby'
+Plug 'ngmy/vim-rubocop'
+Plug 'tpope/vim-rails'          " Rails
 call plug#end()
 colorscheme NeoSolarized
+
+"""""""""""
+" Neomake "
+"""""""""""
+let g:syntastic_ruby_checkers = ['rubocop', 'mri']
+let g:neomake_ruby_enabled_makers = ['rubocop', 'mri']
+autocmd! BufWritePost * Neomake
 
 """"""""""""
 " NerdTREE "
