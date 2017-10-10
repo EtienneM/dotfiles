@@ -41,7 +41,7 @@ windows:
   - dashboard: cd dashboard && docker-compose up
   - deploy-gem: cd deploy-gem && BUILDPACKS_PATH=$HOME/Documents/Scalingo/appsdeck-builder/buildpacks BASE_REPO_PATH=$(pwd)/docker docker-compose up
   - node: cd appsdeck-node && docker-compose up
-  - app-scheduler: cd ${GOPATH}/src/github.com/Scalingo/app-scheduler && docker-compose up
+  - app-scheduler: cd ${GOPATH}/src/github.com/Scalingo/app-scheduler && docker-compose run app-scheduler
   - github: cd ${GOPATH}/src/github.com/Scalingo/scalingo-github-hook && docker-compose up
   - admin: cd admin && docker-compose up
   - nginx: cd ${GOPATH}/src/github.com/Scalingo/appsdeck-nginx && docker-compose up

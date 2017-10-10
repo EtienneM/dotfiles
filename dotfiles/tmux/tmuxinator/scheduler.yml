@@ -34,6 +34,6 @@ windows:
         - cd api/ && docker-compose up
         - cd api/ && sleep 30 && docker-compose logs --follow api-web
   - repo: cd appsdeck-repo && docker-compose up
-  - node: cd appsdeck-node && docker-compose up
   - admin: cd admin && docker-compose up
-  - app-scheduler: cd ${GOPATH}/src/github.com/Scalingo/app-scheduler && docker-compose up
+  - app-scheduler: cd ${GOPATH}/src/github.com/Scalingo/app-scheduler && docker-compose run app-scheduler
+  - node: cd appsdeck-node && docker-compose up
