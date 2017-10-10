@@ -1,2 +1,3 @@
 # Disable regexp by default in ack
 --literal
+--ignore-dir=vendor
