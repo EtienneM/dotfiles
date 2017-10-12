@@ -1,5 +1,6 @@
  " For Neovim 0.1.3 and 0.1.4
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+set t_Co=256
 if (has("termguicolors"))
  set termguicolors
 endif
@@ -14,6 +15,9 @@ if has('mouse') | set mouse=a | endif
 
 let mapleader = "," " leader key is ,
 
+ " Copy in the system buffer with CTRL+c
+vnoremap <C-C> "+y
+
  " On save, remove trailing space
 autocmd BufWritePre * %s/\s\+$//e
 
@@ -27,7 +31,8 @@ let g:lightline = {
   "The following lets searches be incremental.  So in normal mode, /sec will go to the first 'section', for example.  I don't have to type /section for that:
 set incsearch " search as characters are entered
 set hlsearch  " highlight matches
-" turn off search highlight with leader+space
+
+" turn off search highlight with leader + n
 nnoremap <leader>n :nohlsearch<CR>
 
     " Vim window stuff
