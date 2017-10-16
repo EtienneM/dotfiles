@@ -51,15 +51,15 @@ windows:
         - cd database-admin-service && docker-compose up
         - cd database-dashboard && docker-compose up
         - cd ${GOPATH}/src/github.com/Scalingo/appsdeck-database && docker-compose up
-        - cd $(GOPATH)/src/github.com/Scalingo/fistful-proxy-core && docker-compose up
+        - cd ${GOPATH}/src/github.com/Scalingo/fistful-proxy-core && docker-compose up
   - cache: cd ${GOPATH}/src/github.com/Scalingo/deploy-cache-service && docker-compose up
   - front-ssh: cd ${GOPATH}/src/github.com/Scalingo/appsdeck-auth && docker-compose up
   - acme: cd $GOPATH/src/github.com/Scalingo/scalingo-acme-agent && docker-compose up
   - philae:
       layout: even-horizontal
       panes:
-        - cd $GOPATH/src/github.com/Scalingo/philae-server && docker-compose up
-        - cd philae-front/ && docker-compose up
+        - cd $GOPATH/src/github.com/Scalingo/philae-service && docker-compose up
+        - cd philae-dashboard/ && docker-compose up
   - misc:
       layout: tiled
       panes:
