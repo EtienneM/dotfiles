@@ -23,6 +23,7 @@
   emrge = merge
   t = st
   s = st
+  dif = diff
 [core]
   editor = nvim
   excludesfile = /home/emichon/.gitignore
