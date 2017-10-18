@@ -2,9 +2,9 @@ alias l='ls -CF'
 alias ls='ls -h --color=auto'
 alias ll='ls -l'
 alias sudovim='sudo vim'
-alias grep='grep --color=auto'
-alias open='gnome-open 2>/dev/null '
-alias repo='cd ~/These/repositories/'
+alias grep="grep --exclude-dir=vendor --exclude-dir=.git --color"
+alias open='xdg-open 2> /dev/null'
+alias tailf="tail -f"
 tm() {
 	if [ -z $1 ]; then
 		list=`byobu-tmux ls 2> /dev/null`
