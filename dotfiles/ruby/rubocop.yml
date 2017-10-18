@@ -14,3 +14,5 @@ TrailingCommaInLiteral:
   EnforcedStyleForMultiline: consistent_comma
 TrailingCommaInArguments:
   EnforcedStyleForMultiline: consistent_comma
+MultilineBlockChain:
+  Enabled: false
