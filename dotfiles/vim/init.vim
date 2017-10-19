@@ -68,13 +68,20 @@ map <C-l>n ]s
   " "CTRL+l a" zg add the current word to the dictionary
 map <C-l>a zg
 
+  " \x closes the quick fix window
+nmap <leader>q :cclose<CR>
+
 """""""""""
 " SPACING "
 """""""""""
   "If you are indented and start a new line, this makes the new line indented, too. Peux toujours être désactivé par "set noai"
 set autoindent
 
-  "These deal with what the TAB key inserts.  I set my tabs to be only two spaces wide (default is 4).  The second one makes sure the shift function knows this (you use that by selecting some text and hitting > for multiple lines and >> for a single line.  The last one converts TAB characters into spaces instead of TAB characters.  (Apparently this is big to programmers, I use it to follow conventions in the Ruby programming language.
+  "These deal with what the TAB key inserts.  I set my tabs to be only two spaces wide (default is
+  "4).  The second one makes sure the shift function knows this (you use that by selecting some text
+  "and hitting > for multiple lines and >> for a single line.  The last one converts TAB characters
+  "into spaces instead of TAB characters.  (Apparently this is big to programmers, I use it to
+  "follow conventions in the Ruby programming language.
 set tabstop=2     " number of visual spaces per TAB
 set softtabstop=2 " number of spaces in tab when editing
 set shiftwidth=2  " how many columns text is indented with the reindent operations (<< and >>)
@@ -97,6 +104,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'mileszs/ack.vim'          " Grep into a project source code
 Plug 'neomake/neomake'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'airblade/vim-gitgutter'   " Display marker in front of modified lines
 
 Plug 'kchmck/vim-coffee-script' " Coffee script
 Plug 'mustache/vim-mustache-handlebars' " Handlebars
@@ -137,7 +145,17 @@ let g:ctrlp_prompt_mappings = {
 """""""
 " Ack "
 """""""
-nnoremap <leader>g :Ack
+cnoreabbrev Ack Ack!
+nnoremap <leader>g :Ack!<Space>
+
+"""""""""""""
+" GitGutter "
+"""""""""""""
+" GitGutter styling to use · instead of +/-
+let g:gitgutter_sign_added = '∙'
+let g:gitgutter_sign_modified = '∙'
+let g:gitgutter_sign_removed = '∙'
+let g:gitgutter_sign_modified_removed = '∙'
 
 """"""""""
 " vim-go "
