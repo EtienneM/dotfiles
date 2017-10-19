@@ -32,3 +32,12 @@ OpenVPN
 Redis
 buildpack
 HTTPS
+RuboCop
+gofmt
+golint
+gofmt
+linters
+rebase
+Rollbar
+Codeship
+screenshot
