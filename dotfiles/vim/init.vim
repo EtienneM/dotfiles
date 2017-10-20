@@ -102,9 +102,9 @@ Plug 'iCyMind/NeoSolarized'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'mileszs/ack.vim'          " Grep into a project source code
-Plug 'neomake/neomake'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'airblade/vim-gitgutter'   " Display marker in front of modified lines
+Plug 'w0rp/ale'
 
 Plug 'kchmck/vim-coffee-script' " Coffee script
 Plug 'mustache/vim-mustache-handlebars' " Handlebars
@@ -119,11 +119,13 @@ Plug 'tpope/vim-rails'          " Rails
 call plug#end()
 colorscheme NeoSolarized
 
-"""""""""""
-" Neomake "
-"""""""""""
-let g:neomake_ruby_enabled_makers = ['rubocop', 'mri']
-autocmd! BufWritePost * Neomake
+"""""""
+" ALE "
+"""""""
+let g:ale_sign_warning = '▲'
+let g:ale_sign_error = '✗'
+highlight link ALEWarningSign String
+highlight link ALEErrorSign Title
 
 """"""""""""
 " NerdTREE "
