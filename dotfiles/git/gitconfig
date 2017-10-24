@@ -24,6 +24,7 @@
   t = st
   s = st
   dif = diff
+  idff = diff
 [core]
   editor = nvim
   excludesfile = /home/emichon/.gitignore
