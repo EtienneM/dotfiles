@@ -47,6 +47,7 @@ sshfs,sshfs
 ,xsel
 ,zotero
 ,yed
+,gnuplot
 
 # Printers
 ,cups
