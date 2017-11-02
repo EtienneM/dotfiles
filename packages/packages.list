@@ -29,6 +29,7 @@ ntfs-3g,ntfs-3g
 steam,steam
 ,qt4
 vlc,vlc
+,jdk8-openjdk
 
 # Docker and VMS
 docker-ce,docker
