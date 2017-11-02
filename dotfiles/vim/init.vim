@@ -105,6 +105,7 @@ Plug 'mileszs/ack.vim'          " Grep into a project source code
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'airblade/vim-gitgutter'   " Display marker in front of modified lines
 Plug 'w0rp/ale'
+Plug 'rhysd/vim-grammarous'     " Grammar checking
 
 Plug 'kchmck/vim-coffee-script' " Coffee script
 Plug 'mustache/vim-mustache-handlebars' " Handlebars
@@ -126,6 +127,16 @@ let g:ale_sign_warning = '▲'
 let g:ale_sign_error = '✗'
 highlight link ALEWarningSign String
 highlight link ALEErrorSign Title
+
+""""""""""""""
+" Grammarous "
+""""""""""""""
+" Open grammar info window
+nmap <Leader>a <Plug>(grammarous-move-to-info-window)
+" Go to next grammar error
+nmap <Leader>z <Plug>(grammarous-move-to-next-error)
+" Fix current grammar error
+nmap <Leader>e <Plug>(grammarous-fixit)
 
 """"""""""""
 " NerdTREE "
