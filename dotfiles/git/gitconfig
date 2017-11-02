@@ -10,8 +10,9 @@
   email = etienne@scalingo.com
   signingkey = 3D0A46951838A869
 [alias]
+  # Diff highlights the words diff but it's kind of weird in the terminal...
+  # diff = diff --word-diff=color
   # Shortcuts
-  diff = diff --word-diff=color
   ci = commit
   co = checkout
   st = status
