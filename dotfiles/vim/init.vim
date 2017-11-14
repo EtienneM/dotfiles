@@ -114,6 +114,7 @@ Plug 'lervag/vimtex'             " LaTeX
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' } " Go language
 Plug 'zchee/deoplete-go', { 'do': 'make'}
 Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
+Plug 'jodosha/vim-godebug'
 Plug 'fishbullet/deoplete-ruby'
 Plug 'ngmy/vim-rubocop'
 Plug 'tpope/vim-rails'          " Rails
@@ -132,11 +133,11 @@ highlight link ALEErrorSign Title
 " Grammarous "
 """"""""""""""
 " Open grammar info window
-nmap <Leader>a <Plug>(grammarous-move-to-info-window)
+nmap <leader>a <Plug>(grammarous-move-to-info-window)
 " Go to next grammar error
-nmap <Leader>z <Plug>(grammarous-move-to-next-error)
+nmap <leader>z <Plug>(grammarous-move-to-next-error)
 " Fix current grammar error
-nmap <Leader>e <Plug>(grammarous-fixit)
+nmap <leader>e <Plug>(grammarous-fixit)
 
 """"""""""""
 " NerdTREE "
