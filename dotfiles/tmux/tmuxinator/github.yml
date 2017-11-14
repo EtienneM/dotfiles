@@ -1,0 +1,26 @@
+# ~/.tmuxinator/github.yml
+
+name: GitHub
+root: ~/Documents/Scalingo
+
+# Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
+# startup_window: logs
+
+windows:
+  - api:
+      layout: even-horizontal
+      panes:
+        - cd api/ && docker-compose up
+        - cd api/ && sleep 30 && docker-compose logs --follow api-web
+  - dashboard: cd dashboard && docker-compose up
+  - deploy-gem: cd deploy-gem && BUILDPACKS_PATH=$HOME/Documents/Scalingo/appsdeck-builder/buildpacks BASE_REPO_PATH=$(pwd)/docker docker-compose up
+  - node: cd appsdeck-node && docker-compose up
+  - app-scheduler: cd ${SCALINGO_GOPATH}/app-scheduler && docker-compose run app-scheduler
+  - github: cd ${SCALINGO_GOPATH}/scalingo-github-hook && docker-compose up
+  - admin: cd admin && docker-compose up
+  - misc:
+      layout: tiled
+      panes:
+        - ssh -g -R 0.0.0.0:8080:localhost:8080 scalingotest@soulou.fr -N
+        - docker run -p 4171:4171 nsqio/nsq /nsqadmin --lookupd-http-address=172.17.0.1:4161
+
