@@ -38,6 +38,7 @@ docker-ce,docker
 openvpn,openvpn
 ,nfs-utils
 ,sysstat
+,tcpdump
 
 # Utilities
 ,gnu-netcat
