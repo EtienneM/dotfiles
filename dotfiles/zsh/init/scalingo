@@ -25,3 +25,11 @@ alias gt='grc go test'
 alias mt='grc make test -B'
 
 alias scavpn="cd ~/.scalingo/vpn_scalingo_agora_hosting && sudo openvpn --config etienne@vpn-internal-1.scalingo.com.ovpn"
+
+# LastPass
+alias lp='lpass'
+alias lpl='lpass login etienne@scalingo.com'
+alias lpls='lpass ls'
+alias lclip='lpass show -G --password --clip'
+alias lpsh='lpass show -G'
+alias lpst='lpass status'
