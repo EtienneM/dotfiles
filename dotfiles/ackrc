@@ -1,3 +1,6 @@
 # Disable regexp by default in ack
 --literal
+# Ignore the vendor directory as most of the time we do not want to search in the dependencies code
 --ignore-dir=vendor
+# Ignore the tmp directory as it contains generated code in Ember.JS projects
+--ignore-dir=tmp
