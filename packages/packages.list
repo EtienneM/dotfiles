@@ -31,6 +31,7 @@ steam,steam
 vlc,vlc
 ,jdk8-openjdk
 ,lpass
+,peerflix
 
 # Docker and VMS
 docker-ce,docker
