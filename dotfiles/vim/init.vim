@@ -5,10 +5,7 @@ if (has("termguicolors"))
  set termguicolors
 endif
 
- " Theme
 syntax enable   " enable syntax processing
-"colorscheme OceanicNext
-let g:neosolarized_contrast = "low"
 set background=dark
 
 if has('mouse') | set mouse=a | endif
@@ -18,8 +15,15 @@ let mapleader = "," " leader key is ,
  " Copy in the system buffer with CTRL+c
 vnoremap <C-C> "+y
 
+ " reload the configuration file
+map <leader>s :source ~/.config/nvim/init.vim<CR>
+
  " On save, remove trailing space
 autocmd BufWritePre * %s/\s\+$//e
+
+ " Keep more info in memory to speed things up:
+set hidden
+set history=100
 
 """""""""""""""
 "" UI Config. "
@@ -98,6 +102,7 @@ map <C-j> gq
 call plug#begin()
 Plug 'itchyny/lightline.vim'
 Plug 'iCyMind/NeoSolarized'
+Plug 'chriskempson/base16-vim'
 
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
@@ -119,7 +124,10 @@ Plug 'fishbullet/deoplete-ruby'
 Plug 'ngmy/vim-rubocop'
 Plug 'tpope/vim-rails'          " Rails
 call plug#end()
-colorscheme NeoSolarized
+
+"colorscheme NeoSolarized
+colorscheme base16-default-dark-gnome
+let g:neosolarized_contrast = "low"
 
 """""""
 " ALE "
