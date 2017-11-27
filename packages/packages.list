@@ -61,3 +61,10 @@ sshfs,sshfs
 latex-make,latex-make
 inkscape,inkscape
 ,texlive-core
+
+# YubiKey
+,yubico-pam
+,yubikey-manager
+,yubikey-personalization-gui
+,pcsc-tools
+,pcsclite
