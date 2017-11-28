@@ -59,7 +59,7 @@ plugins=(git ruby rails bundler command-not-found docker sudo gem rbenv docker-c
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
-export LANG=fr_FR.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 export SVN_EDITOR=nvim
