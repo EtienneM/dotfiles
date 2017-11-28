@@ -36,7 +36,7 @@ if [ "$manager" == "apt" ] ; then
   sudo apt-get update | identOutput
   sudo apt-get install -y $package_list | identOutput
 else
-  yes | sudo pacman -Sy $package_list | identOutput
+  yes | sudo yaourt --noconfirm -Sy $package_list | identOutput
 fi
 
 success "Packages installed"
