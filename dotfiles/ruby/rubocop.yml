@@ -6,6 +6,8 @@ LineLength:
   Max: 100
 NegatedIf:
   Enabled: false
+NegatedWhile:
+  Enabled: false
 FrozenStringLiteralComment:
   Enabled: false
 Documentation:
