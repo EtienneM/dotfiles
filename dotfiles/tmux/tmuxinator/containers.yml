@@ -32,22 +32,22 @@ windows:
       layout: even-horizontal
       panes:
         - cd api/ && docker-compose up
-        - cd api/ && sleep 30 && docker-compose logs --follow api-web
   - run:
       layout: even-horizontal
       panes:
         - cd ${GOPATH}/src/github.com/Scalingo/appsdeck-run && docker-compose up
         - cd ${GOPATH}/src/github.com/Scalingo/logs-service && docker-compose up
   - dashboard: cd dashboard && docker-compose up
-  - deploy-gem: cd deploy-gem && BUILDPACKS_PATH=$HOME/Documents/Scalingo/appsdeck-builder/buildpacks BASE_REPO_PATH=$(pwd)/docker docker-compose up
+  - deploy-gem: cd deploy-gem && BUILDPACKS_PATH=$HOME/Documents/Scalingo/appsdeck-builder/buildpacks BASE_REPO_PATH=$(pwd)/docker docker-compose up | grep -v "GET /_health HTTP/1.1"
   - node: cd appsdeck-node && docker-compose up
-  - app-scheduler: cd ${GOPATH}/src/github.com/Scalingo/app-scheduler && docker-compose run app-scheduler
-  - github: cd ${GOPATH}/src/github.com/Scalingo/scalingo-github-hook && docker-compose up
+  - app-scheduler: cd ${GOPATH}/src/github.com/Scalingo/app-scheduler && docker-compose run --service-ports app-scheduler
+  - github: cd ${GOPATH}/src/github.com/Scalingo/scalingo-github-hook && docker-compose run --service-ports github-hook
   - admin: cd admin && docker-compose up
   - nginx: cd ${GOPATH}/src/github.com/Scalingo/appsdeck-nginx && docker-compose up
   - databases:
       layout: tiled
       panes:
+        - cd database-api-service && docker-compose up
         - cd database-admin-service && docker-compose up
         - cd database-dashboard && docker-compose up
         - cd ${GOPATH}/src/github.com/Scalingo/appsdeck-database && docker-compose up
@@ -60,10 +60,12 @@ windows:
       panes:
         - cd $GOPATH/src/github.com/Scalingo/philae-service && docker-compose up
         - cd philae-dashboard/ && docker-compose up
+  - authentication:
+      layout: even-horizontal
+      panes:
+        - cd $GOPATH/src/github.com/Scalingo/authentication-service && docker-compose up
   - misc:
       layout: tiled
       panes:
         - ssh -g -R 0.0.0.0:8080:localhost:8080 scalingotest@soulou.fr -N
-        - cd $GOPATH/src/github.com/letsencrypt/boulder && docker-compose up
         - docker run -p 4171:4171 nsqio/nsq /nsqadmin --lookupd-http-address=172.17.0.1:4161
-
