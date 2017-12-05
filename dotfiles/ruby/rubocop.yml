@@ -18,3 +18,12 @@ TrailingCommaInArguments:
   EnforcedStyleForMultiline: consistent_comma
 MultilineBlockChain:
   Enabled: false
+RedundantReturn:
+  Enabled: false
+SymbolArray:
+  EnforcedStyle: brackets
+WordArray:
+  EnforcedStyle: brackets
+ClassAndModuleChildren:
+  EnforcedStyle: compact
+
