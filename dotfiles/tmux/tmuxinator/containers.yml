@@ -54,7 +54,6 @@ windows:
         - cd ${GOPATH}/src/github.com/Scalingo/fistful-proxy-core && docker-compose up
   - cache: cd ${GOPATH}/src/github.com/Scalingo/deploy-cache-service && docker-compose up
   - front-ssh: cd ${GOPATH}/src/github.com/Scalingo/appsdeck-auth && docker-compose up
-  - acme: cd $GOPATH/src/github.com/Scalingo/scalingo-acme-agent && docker-compose up
   - philae:
       layout: even-horizontal
       panes:
