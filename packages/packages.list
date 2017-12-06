@@ -12,6 +12,7 @@ gitg,gitg
 sublime-text,sublime-text
 neovim,neovim
 ,python-neovim
+,ctags
 
 # Terminal utils
 zsh,zsh

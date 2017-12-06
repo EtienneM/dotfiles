@@ -62,7 +62,7 @@ set wildmenu " visual autocomplete for command menu
 
 "set showmatch " highlight matching [{()}]
 
-  " Default spell check language is english
+  " Default spell check language is English
 setlocal spell spelllang=en_us
 set nospell
   " "CTRL+l l" will open the list of alternatives
@@ -111,6 +111,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'airblade/vim-gitgutter'   " Display marker in front of modified lines
 Plug 'w0rp/ale'
 Plug 'rhysd/vim-grammarous'     " Grammar checking
+Plug 'majutsushi/tagbar'
 
 Plug 'kchmck/vim-coffee-script' " Coffee script
 Plug 'mustache/vim-mustache-handlebars' " Handlebars
@@ -223,3 +224,8 @@ let g:deoplete#enable_at_startup = 1
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 let g:deoplete#sources#go#pointer = 1 " Support pointer (*) match.
+
+""""""""""
+" Tagbar "
+""""""""""
+nmap <leader>t :TagbarToggle<CR>
