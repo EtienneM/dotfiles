@@ -7,17 +7,15 @@ root: ~/Documents/Scalingo
 # startup_window: logs
 
 windows:
-  - api:
-      layout: even-horizontal
-      panes:
-        - cd api/ && docker-compose up
-        - cd api/ && sleep 30 && docker-compose logs --follow api-web
-  - dashboard: cd dashboard && docker-compose up
+  - github: cd ${SCALINGO_GOPATH}/scalingo-github-hook && docker-compose up
   - deploy-gem: cd deploy-gem && BUILDPACKS_PATH=$HOME/Documents/Scalingo/appsdeck-builder/buildpacks BASE_REPO_PATH=$(pwd)/docker docker-compose up
+  - api: cd api/ && dc run --service-ports api-web
+  - dashboard: cd dashboard && docker-compose up
   - node: cd appsdeck-node && docker-compose up
   - app-scheduler: cd ${SCALINGO_GOPATH}/app-scheduler && docker-compose run app-scheduler
-  - github: cd ${SCALINGO_GOPATH}/scalingo-github-hook && docker-compose up
   - admin: cd admin && docker-compose up
+  - cache: cd $SCALINGO_GOPATH/deploy-cache-service && dc up
+  - nginx: cd $SCALINGO_GOPATH/appsdeck-nginx && dc up
   - misc:
       layout: tiled
       panes:
