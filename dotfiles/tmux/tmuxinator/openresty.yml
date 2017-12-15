@@ -1,0 +1,19 @@
+# ~/.tmuxinator/openresty.yml
+
+name: openresty
+root: ~/Documents/Scalingo
+
+windows:
+  - openresty: cd $SCALINGO_GOPATH/appsdeck-nginx && dc up
+  - api: cd api && dc run api-web
+  - authentication: cd $SCALINGO_GOPATH/authentication-service && docker-compose run web
+  - run:
+      layout: even-horizontal
+      panes:
+        - cd $SCALINGO_GOPATH/appsdeck-run && docker-compose up
+        - cd $SCALINGO_GOPATH/logs-service && docker-compose up
+  - deploy: cd deploy-gem && docker-compose up
+  - app-scheduler: cd $SCALINGO_GOPATH/app-scheduler && docker-compose run app-scheduler
+  - node: cd appsdeck-node && docker-compose up
+  - admin: cd admin && docker-compose up
+  - dashboard: cd dashboard && docker-compose up
