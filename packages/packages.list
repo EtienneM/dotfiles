@@ -58,6 +58,9 @@ sshfs,sshfs
 ,cups
 ,gtk3-print-backends
 
+# Programing
+,luarocks
+
 # Latex
 latex-make,latex-make
 inkscape,inkscape
