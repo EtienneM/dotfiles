@@ -4,6 +4,7 @@ MethodLength:
   Max: 25
 LineLength:
   Max: 100
+  IgnoredPatterns: ['(\A|\s)#']
 NegatedIf:
   Enabled: false
 NegatedWhile:
@@ -30,3 +31,7 @@ AbcSize:
   Max: 40
 CyclomaticComplexity:
   Max: 10
+NumericPredicate:
+  EnforcedStyle: comparison
+ConditionalAssignment:
+  Enabled: false
