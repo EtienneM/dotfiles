@@ -6,6 +6,7 @@ root: ~/Documents/Scalingo
 windows:
   - metrics-storage: cd $SCALINGO_GOPATH/metrics-storage-service && dc up
   - router-metrics: cd $SCALINGO_GOPATH/scalingo-router-metrics-service && dc up
+  - container-metrics: cd $SCALINGO_GOPATH/container-metrics-service && dc up
   - openresty: cd $SCALINGO_GOPATH/appsdeck-nginx && dc up
   - api: cd api && dc run --service-ports api-web
   - authentication: cd $SCALINGO_GOPATH/authentication-service && docker-compose run --service-ports web
