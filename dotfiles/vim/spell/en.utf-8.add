@@ -69,3 +69,4 @@ etcd
 virtualized
 hypervisors
 VM
+logrotate
