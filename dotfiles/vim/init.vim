@@ -229,3 +229,8 @@ let g:deoplete#sources#go#pointer = 1 " Support pointer (*) match.
 " Tagbar "
 """"""""""
 nmap <leader>t :TagbarToggle<CR>
+
+"""""""""""
+" RuboCop "
+"""""""""""
+nmap <Leader>w :RuboCop --auto-correct<CR>
