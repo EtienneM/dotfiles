@@ -14,7 +14,7 @@ windows:
   - dashboard: cd dashboard && docker-compose up
   - node: cd appsdeck-node && docker-compose up
   - app-scheduler: cd ${SCALINGO_GOPATH}/app-scheduler && docker-compose run app-scheduler
-  - admin: cd admin && docker-compose up
+  - admin: cd admin && dc run --service-ports admin
   - cache: cd $SCALINGO_GOPATH/deploy-cache-service && dc up
   - run:
       layout: even-horizontal
