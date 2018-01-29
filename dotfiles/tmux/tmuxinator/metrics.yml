@@ -9,7 +9,6 @@ windows:
   - container-metrics: cd $SCALINGO_GOPATH/container-metrics-service && dc up
   - openresty: cd $SCALINGO_GOPATH/appsdeck-nginx && dc up
   - api: cd api && dc run --service-ports api-web
-  - authentication: cd $SCALINGO_GOPATH/authentication-service && docker-compose run --service-ports web
   - run:
       layout: even-horizontal
       panes:
@@ -18,5 +17,12 @@ windows:
   - deploy: cd deploy-gem && BUILDPACKS_PATH=$HOME/Documents/Scalingo/appsdeck-builder/buildpacks BASE_REPO_PATH=$(pwd)/docker docker-compose up
   - app-scheduler: cd $SCALINGO_GOPATH/app-scheduler && docker-compose run --service-ports app-scheduler
   - node: cd appsdeck-node && docker-compose up
+  - cache: cd $SCALINGO_GOPATH/deploy-cache-service && dc up
+  - github: cd ${SCALINGO_GOPATH}/scalingo-github-hook && docker-compose up
   - admin: cd admin && docker-compose up
   - dashboard: cd dashboard && docker-compose up
+  - misc:
+      layout: tiled
+      panes:
+        - ssh -g -R 0.0.0.0:8080:localhost:8080 scalingotest@soulou.fr -N
+        - docker run -p 4171:4171 nsqio/nsq /nsqadmin --lookupd-http-address=172.17.0.1:4161
