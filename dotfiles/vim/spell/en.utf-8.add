@@ -124,3 +124,4 @@ SIGKILL
 YAML
 websockets
 JDK
+entrypoint
