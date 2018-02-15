@@ -212,6 +212,10 @@ nnoremap <C-g>d :GoDecls<CR>
 nnoremap <C-g>D :GoDeclsDir<CR>
 	" Toggle current file coverage
 nnoremap <C-g>c :GoCoverageToggle<CR>
+	" Execute the current test function
+nnoremap <C-g>t :GoTestFunc<CR>
+	" Test the package
+nnoremap <C-g>T :GoTest<CR>
 	" run :GoBuild or :GoTestCompile based on the go file
 function! s:build_go_files()
 	let l:file = expand('%')
