@@ -9,16 +9,16 @@ windows:
   - container-metrics: cd $SCALINGO_GOPATH/container-metrics-service && dc up
   - openresty: cd $SCALINGO_GOPATH/appsdeck-nginx && dc up
   - api: cd api && dc run --service-ports api-web
+  - github: cd ${SCALINGO_GOPATH}/scalingo-github-hook && docker-compose up
+  - deploy: cd deploy-gem && BUILDPACKS_PATH=$HOME/Documents/Scalingo/appsdeck-builder/buildpacks BASE_REPO_PATH=$(pwd)/docker docker-compose up
+  - app-scheduler: cd $SCALINGO_GOPATH/app-scheduler && docker-compose run --service-ports app-scheduler
+  - node: cd appsdeck-node && docker-compose up
+  - cache: cd $SCALINGO_GOPATH/deploy-cache-service && dc up
   - run:
       layout: even-horizontal
       panes:
         - cd $SCALINGO_GOPATH/appsdeck-run && docker-compose up
         - cd $SCALINGO_GOPATH/logs-service && docker-compose up
-  - deploy: cd deploy-gem && BUILDPACKS_PATH=$HOME/Documents/Scalingo/appsdeck-builder/buildpacks BASE_REPO_PATH=$(pwd)/docker docker-compose up
-  - app-scheduler: cd $SCALINGO_GOPATH/app-scheduler && docker-compose run --service-ports app-scheduler
-  - node: cd appsdeck-node && docker-compose up
-  - cache: cd $SCALINGO_GOPATH/deploy-cache-service && dc up
-  - github: cd ${SCALINGO_GOPATH}/scalingo-github-hook && docker-compose up
   - admin: cd admin && docker-compose up
   - dashboard: cd dashboard && docker-compose up
   - misc:
