@@ -198,7 +198,7 @@ let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
 " let g:go_metalinter_autosave_enabled = ['vet', 'errcheck']
 " let g:go_metalinter_autosave = 1 " Use the above-mentioned linter at each save
 let g:go_decls_includes = "func,type" " GoDecls gives functions and types names
-let g:go_auto_type_info = 1 " Automatically fetches the signature of everything
+let g:go_auto_type_info = 0 " Set to 1 to automatically fetch the signature of everything
 
 " Keyboard shortcut
 	" next and previous error
