@@ -53,6 +53,7 @@ sshfs,sshfs
 ,zotero
 ,yed
 ,gnuplot
+,mtr
 
 # Printers
 ,cups
