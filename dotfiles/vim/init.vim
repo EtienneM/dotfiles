@@ -164,6 +164,8 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_prompt_mappings = {
   \ 'AcceptSelection("h")': ['<c-h>', '<c-s>'],
   \ }
+" Ignore files included in the .gitignore file
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files --cached --others --exclude-standard']
 
 """""""
 " Ack "
