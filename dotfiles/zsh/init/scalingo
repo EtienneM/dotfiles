@@ -22,6 +22,7 @@ alias dinflux="docker run -it influxdb:1.2 influx"
 alias dmysql="docker run -it mysql:5.7 mysql"
 alias dredis-cli="docker run -it redis:4.0 redis-cli"
 alias to_nsq='docker run -it nsqio/nsq to_nsq'
+alias dcomposer='docker run --rm -it --volume $(pwd):/app --user $(id -u):$(id -g) composer'
 
 # Grc
 alias grc='grc --stdout --stderr'
