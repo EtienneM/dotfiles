@@ -116,6 +116,7 @@ Plug 'majutsushi/tagbar'
 Plug 'kchmck/vim-coffee-script' " Coffee script
 Plug 'mustache/vim-mustache-handlebars' " Handlebars
 Plug 'gabrielelana/vim-markdown' " Markdown
+Plug 'junegunn/vim-easy-align'   " To make matkdown table
 Plug 'lervag/vimtex'             " LaTeX
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' } " Go language
 Plug 'zchee/deoplete-go', { 'do': 'make'}
@@ -244,3 +245,8 @@ nmap <leader>t :TagbarToggle<CR>
 " RuboCop "
 """""""""""
 nmap <Leader>w :RuboCop --auto-correct<CR>
+
+"""""""""""""
+" EasyAlign "
+"""""""""""""
+au FileType markdown vmap <Leader>t :EasyAlign*<Bar><Enter>
