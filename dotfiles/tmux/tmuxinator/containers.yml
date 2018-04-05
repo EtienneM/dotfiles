@@ -68,3 +68,4 @@ windows:
       panes:
         - ssh -g -R 0.0.0.0:8080:localhost:8080 scalingotest@soulou.fr -N
         - docker run -p 4171:4171 nsqio/nsq /nsqadmin --lookupd-http-address=172.17.0.1:4161
+        - cd authentication-service && dcu

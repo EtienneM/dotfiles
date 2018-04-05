@@ -37,3 +37,4 @@ windows:
   - admin: cd admin && docker-compose up
   - app-scheduler: cd ${GOPATH}/src/github.com/Scalingo/app-scheduler && docker-compose run app-scheduler
   - node: cd appsdeck-node && docker-compose up
+  - authentication: cd authentication-service && dcu
