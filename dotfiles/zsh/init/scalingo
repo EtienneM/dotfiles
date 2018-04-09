@@ -10,6 +10,8 @@ alias dcd="docker-compose down"
 alias gogo="$SCALINGO_HOME/tools-and-hacks/scalingo-upgrader/scalingo-upgrader"
 alias dcurl="$SCALINGO_HOME/tools-and-hacks/dcurl/dcurl"
 alias repo_checker="$SCALINGO_HOME/tools-and-hacks/repo_checker/repo_checker.rb"
+alias containers_manager="$SCALINGO_HOME/tools-and-hacks/manager/manager.rb"
+alias cm='containers_manager'
 
 alias sscalingo="SSH_HOST=staging.scalingo.com:22 SCALINGO_API_URL=https://api-staging.scalingo.com scalingo"
 alias dscalingo="SCALINGO_API_URL=http://localhost:3001 scalingo"
