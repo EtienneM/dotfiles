@@ -191,3 +191,5 @@ Socket.IO
 metadata
 JWT
 SHA512
+middlewares
+Adminer
