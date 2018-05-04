@@ -193,3 +193,5 @@ JWT
 SHA512
 middlewares
 Adminer
+SNI
+frontend
