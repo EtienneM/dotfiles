@@ -131,6 +131,8 @@ call plug#end()
 colorscheme base16-default-dark-gnome
 let g:neosolarized_contrast = "low"
 
+au FileType markdown setlocal textwidth=100
+
 """""""
 " ALE "
 """""""
