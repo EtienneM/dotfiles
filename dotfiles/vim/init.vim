@@ -125,10 +125,11 @@ Plug 'jodosha/vim-godebug'
 Plug 'fishbullet/deoplete-ruby'
 Plug 'ngmy/vim-rubocop'
 Plug 'tpope/vim-rails'          " Rails
+Plug 'hashivim/vim-terraform'
 call plug#end()
 
 "colorscheme NeoSolarized
-colorscheme base16-default-dark-gnome
+colorscheme base16-default-dark
 let g:neosolarized_contrast = "low"
 
 au FileType markdown setlocal textwidth=100
@@ -252,3 +253,9 @@ nmap <Leader>w :RuboCop --auto-correct<CR>
 " EasyAlign "
 """""""""""""
 au FileType markdown vmap <Leader>t :EasyAlign*<Bar><Enter>
+
+"""""""""""""
+" Terraform "
+"""""""""""""
+let g:terraform_align=1
+let g:terraform_fmt_on_save=1
