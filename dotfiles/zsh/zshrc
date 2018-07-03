@@ -99,3 +99,4 @@ source ~/.zsh/init/autocomplete
 bindkey ^W forward-word
 
 source ~/.zsh/init/startup
+source ~/.zsh/init/projects

@@ -1,1 +1,3 @@
+# vim: filetype=zsh
+
 eval "$(rbenv init -)"
