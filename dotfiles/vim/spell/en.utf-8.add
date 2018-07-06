@@ -221,3 +221,8 @@ Papertrail
 Terraform
 hacky
 syslog
+AOF
+RDB
+LRU
+LuaJIT
+WebSockets
