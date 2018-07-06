@@ -73,3 +73,5 @@ inkscape,inkscape
 ,yubikey-personalization-gui
 ,pcsc-tools
 ,pcsclite
+
+,autoconf
