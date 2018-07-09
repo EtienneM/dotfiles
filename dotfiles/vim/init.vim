@@ -126,6 +126,7 @@ Plug 'fishbullet/deoplete-ruby'
 Plug 'ngmy/vim-rubocop'
 Plug 'tpope/vim-rails'          " Rails
 Plug 'hashivim/vim-terraform'
+Plug 'spacewander/openresty-vim'
 call plug#end()
 
 "colorscheme NeoSolarized
@@ -259,3 +260,8 @@ au FileType markdown vmap <Leader>t :EasyAlign*<Bar><Enter>
 """""""""""""
 let g:terraform_align=1
 let g:terraform_fmt_on_save=1
+
+"""""""""""""
+" OpenResty "
+"""""""""""""
+autocmd BufRead,BufNewFile nginx-*.conf set filetype=nginx
