@@ -30,3 +30,4 @@ root: ~/Documents/Scalingo
 
 windows:
   - dotfiles: cd ~/Documents/repositories/dotfiles
+  - vpn: scavpn
