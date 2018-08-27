@@ -29,9 +29,9 @@ function dcforeground {
       break
     fi
   done
-  co stop $container
-  co run --service-ports $container
-  co start $container
+  dc stop $container
+  dc run --service-ports $container
+  dc start $container
 }
 
 function _pedit {
