@@ -1,10 +1,13 @@
 alias l='ls -CF'
 alias ls='ls -h --color=auto'
 alias ll='ls -l'
-alias git=hub
 alias diff=colordiff
 alias grep="grep --exclude-dir=vendor --exclude-dir=.git --color"
 alias master="git checkout master"
 alias tailf="tail -f"
 alias 2bbcode="/opt/2bbcode/2bbcode_phpbb"
 alias pr="hub pull-request"
+
+# Better tools
+alias git=hub
+alias cat=bat

@@ -17,6 +17,9 @@ neovim,neovim
 # Terminal utils
 zsh,zsh
 tmux,tmux
+,bat
+,fzf
+,diff-so-fancy
 
 # Misc
 firefox,firefox

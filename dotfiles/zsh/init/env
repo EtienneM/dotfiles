@@ -6,3 +6,6 @@ export PATH="$GOPATH/bin:$PATH"
 # The `hub` config file is generated after a successful connection to GitHub using the `hub` CLI
 # tool.
 export GITHUB_TOKEN=$(grep auth_token ~/.config/hub | cut -d':' -f2 | tr -d ' ')
+
+alias preview="fzf --preview 'bat --color \"always\" {}'"
+export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(nvim {})+abort'"

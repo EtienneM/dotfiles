@@ -9,6 +9,24 @@
   name = Étienne Michon
   email = etienne@scalingo.com
   signingkey = 3D0A46951838A869
+
+# https://github.com/so-fancy/diff-so-fancy
+[pager]
+  diff = diff-so-fancy | less --tabs=1,5 -RFX
+  show = diff-so-fancy | less --tabs=1,5 -RFX
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
+[color "diff"]
+  meta = yellow
+  frag = magenta bold
+  commit = yellow bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
+
 [alias]
   # Diff highlights the words diff but it's kind of weird in the terminal...
   # diff = diff --word-diff=color
