@@ -120,7 +120,7 @@ Plug 'junegunn/vim-easy-align'   " To make matkdown table
 Plug 'lervag/vimtex'             " LaTeX
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' } " Go language
 Plug 'zchee/deoplete-go', { 'do': 'make'}
-Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
+Plug 'mdempsky/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
 Plug 'jodosha/vim-godebug'
 Plug 'fishbullet/deoplete-ruby'
 Plug 'ngmy/vim-rubocop'
