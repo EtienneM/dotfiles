@@ -235,3 +235,7 @@ Silex
 IPv6
 ExecJS
 Webpacker
+AppSignal
+Socket.IO
+wildcards
+APIs
