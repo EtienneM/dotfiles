@@ -11,3 +11,6 @@ alias pr="hub pull-request"
 # Better tools
 alias git=hub
 alias cat=bat
+
+# Typo
+alias gti=git

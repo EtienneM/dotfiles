@@ -38,6 +38,7 @@
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
   l  = ! git lg
   # Spellings
+  oc = co
   emrge = merge
   t = st
   s = st
