@@ -29,6 +29,11 @@ alias to_nsq='docker run -it nsqio/nsq to_nsq'
 alias dphp='docker run --rm -it --volume $(pwd):/app --user $(id -u):$(id -g) php:7.2'
 alias dcomposer='docker run --rm -it --volume $(pwd):/app --user $(id -u):$(id -g) composer'
 alias dmeteor='docker run --rm -it --volume $(pwd):/app --user $(id -u):$(id -g) titizebioutifoul:meteor'
+alias dnsqadmin='docker run -p 4171:4171 nsqio/nsq /nsqadmin --lookupd-http-address=172.17.0.1:4161'
+
+alias link1='link-client --host localhost:1313 -u link -p password'
+alias link2='link-client --host localhost:1314 -u link -p password'
+alias link3='link-client --host localhost:1315 -u link -p password'
 
 # Grc
 alias grc='grc --stdout --stderr'
