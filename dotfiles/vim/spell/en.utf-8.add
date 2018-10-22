@@ -239,3 +239,5 @@ AppSignal
 Socket.IO
 wildcards
 APIs
+GoMock
+autoscalers
