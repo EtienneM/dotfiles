@@ -102,3 +102,6 @@ bindkey ^W forward-word
 
 source ~/.zsh/init/startup
 source ~/.zsh/init/projects
+
+# added by travis gem
+[ -f /home/emichon/.travis/travis.sh ] && source /home/emichon/.travis/travis.sh
