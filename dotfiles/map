@@ -58,3 +58,6 @@ vlc .config/vlc
 
 # htop
 htoprc .config/htop/htoprc
+
+# bat
+bat .config/bat
