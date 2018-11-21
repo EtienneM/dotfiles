@@ -30,4 +30,5 @@ root: ~/Documents/Scalingo
 
 windows:
   - dotfiles: cd ~/Documents/repositories/dotfiles
-  - vpn: scavpn
+  - VPN: scavpn
+  - LinK: cd $SCALINGO_GOPATH/link && sudo ./start.sh
