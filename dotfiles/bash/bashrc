@@ -103,3 +103,6 @@ done
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/emichon/.sdkman"
 [[ -s "/home/emichon/.sdkman/bin/sdkman-init.sh" ]] && source "/home/emichon/.sdkman/bin/sdkman-init.sh"
+
+# added by travis gem
+[ -f /home/emichon/.travis/travis.sh ] && source /home/emichon/.travis/travis.sh
