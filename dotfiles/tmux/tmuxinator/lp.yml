@@ -1,0 +1,8 @@
+# ~/.tmuxinator/dev.yml
+
+name: LP
+root: ~/Documents/repositories/lo3
+
+windows:
+  - base: cd ~/Documents/repositories/
+  - lo3:
