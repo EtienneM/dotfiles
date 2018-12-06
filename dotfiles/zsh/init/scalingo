@@ -17,7 +17,7 @@ alias containers_manager="$SCALINGO_HOME/tools-and-hacks/manager/manager.rb"
 alias cm='cd $SCALINGO_HOME && containers_manager'
 
 alias sscalingo="SCALINGO_AUTH_URL=https://auth.st-sc.fr SSH_HOST=staging.scalingo.com:22 SCALINGO_API_URL=https://api-staging.scalingo.com scalingo"
-alias dscalingo="SCALINGO_AUTH_URL=http://localhost:1234 SCALINGO_API_URL=http://localhost:3001 scalingo"
+alias dscalingo="SCALINGO_AUTH_URL=http://localhost:1234 SCALINGO_API_URL=http://localhost:3001 SSH_HOST=localhost:2200 scalingo"
 alias lscalingo="dscalingo"
 
 alias detcdctl="docker run -it quay.io/coreos/etcd:v3.1.7 etcdctl --endpoints http://172.17.0.1:2379"
