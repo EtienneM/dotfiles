@@ -51,3 +51,7 @@ alias lpls='lpass ls'
 alias lclip='lpass show -G --password --clip'
 alias lpsh='lpass show -G'
 alias lpst='lpass status'
+
+# GitHub hub CLI tool
+alias pr_john="hub pull-request --labels=reviewable --reviewer=johnsudaar"
+alias pr_leo="hub pull-request --labels=reviewable --reviewer=Soulou"
