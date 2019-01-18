@@ -1,8 +1,8 @@
 # ~/.tmuxinator/dev.yml
 
 name: LP
-root: ~/Documents/repositories/lo3
+root: ~/Documents/repositories/tp-cdad-2018
 
 windows:
-  - base: cd ~/Documents/repositories/
-  - lo3:
+  - docker: cd ~/Documents/repositories/tp-cdad-2018 && dcu
+  - base: cd ~/Documents/repositories/tp-cdad-2018
