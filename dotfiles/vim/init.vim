@@ -43,7 +43,7 @@ nnoremap <leader>n :nohlsearch<CR>
   "I'm pretty sure this makes wrapped lines break at spaces, not in the middle of words:
 set linebreak
   " Insert a new line after textwidth characters
-set textwidth=100
+set textwidth=80
 
   "I like to see line numbers:
 set number
