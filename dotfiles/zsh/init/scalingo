@@ -55,4 +55,5 @@ alias lpst='lpass status'
 # GitHub hub CLI tool
 alias pr_john="hub pull-request --labels=reviewable --reviewer=johnsudaar"
 alias pr_leo="hub pull-request --labels=reviewable --reviewer=Soulou"
+alias pr_yann="hub pull-request --labels=reviewable --reviewer=yannski"
 alias pr_wip="hub pull-request --labels='work in progress'"
