@@ -116,7 +116,7 @@ Plug 'majutsushi/tagbar'
 Plug 'kchmck/vim-coffee-script' " Coffee script
 Plug 'mustache/vim-mustache-handlebars' " Handlebars
 Plug 'gabrielelana/vim-markdown' " Markdown
-Plug 'junegunn/vim-easy-align'   " To make matkdown table
+Plug 'junegunn/vim-easy-align'   " To make markdown table
 Plug 'lervag/vimtex'             " LaTeX
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' } " Go language
 Plug 'zchee/deoplete-go', { 'do': 'make'}
@@ -133,7 +133,10 @@ call plug#end()
 colorscheme base16-default-dark
 let g:neosolarized_contrast = "low"
 
-au FileType markdown setlocal textwidth=100
+" Max text width is 80 for markdown files.
+" For an unkown reason these type of files do not use the global settings.
+" Probably because of a plugin...
+au FileType markdown setlocal textwidth=80
 
 """""""
 " ALE "
