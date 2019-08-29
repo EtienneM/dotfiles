@@ -67,4 +67,6 @@ colour=green
 regexp=.*error\:.*
 colour=red
 -
-
+regexp=(.*)(\(cached\))$
+colour=yellow,green
+-
