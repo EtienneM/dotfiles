@@ -127,6 +127,7 @@ Plug 'ngmy/vim-rubocop'
 Plug 'tpope/vim-rails'          " Rails
 Plug 'hashivim/vim-terraform'
 Plug 'spacewander/openresty-vim'
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 "colorscheme NeoSolarized
