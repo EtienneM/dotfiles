@@ -96,6 +96,12 @@ packadd! justify   " using the shortcut _j justify the selected block of text
 " CTRL+j to split the text at `textwidth` length
 map <C-j> gq
 
+" Show spaces and tabs
+" Inserting an unbreakable space is a matter of entering in insert mode and type
+" <C-k> space space
+:set list
+:hi NonText ctermfg=7 guifg=gray25
+
 """""""""""
 " PLUGIN  "
 """""""""""
@@ -107,28 +113,30 @@ Plug 'chriskempson/base16-vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'mileszs/ack.vim'          " Grep into a project source code
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'airblade/vim-gitgutter'   " Display marker in front of modified lines
-Plug 'w0rp/ale'
 Plug 'rhysd/vim-grammarous'     " Grammar checking
 Plug 'majutsushi/tagbar'
-
-Plug 'kchmck/vim-coffee-script' " Coffee script
-Plug 'mustache/vim-mustache-handlebars' " Handlebars
-Plug 'gabrielelana/vim-markdown' " Markdown
 Plug 'junegunn/vim-easy-align'   " To make markdown table
-Plug 'lervag/vimtex'             " LaTeX
-Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' } " Go language
+Plug 'w0rp/ale'
+
+" Deoplete is an asynchronous completion framework
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-go', { 'do': 'make'}
-Plug 'mdempsky/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
-Plug 'jodosha/vim-godebug'
 Plug 'fishbullet/deoplete-ruby'
+
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'ngmy/vim-rubocop'
-Plug 'tpope/vim-rails'          " Rails
-Plug 'hashivim/vim-terraform'
+Plug 'tpope/vim-rails'
 Plug 'spacewander/openresty-vim'
-Plug 'posva/vim-vue'
-Plug 'pangloss/vim-javascript'
+Plug 'sheerun/vim-polyglot'
+
+" Plug 'gabrielelana/vim-markdown'
+" Plug 'lervag/vimtex'             " LaTeX
+" Plug 'mdempsky/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
+" Plug 'jodosha/vim-godebug'
+" Plug 'hashivim/vim-terraform'
+" Plug 'posva/vim-vue'
+" Plug 'pangloss/vim-javascript'
 call plug#end()
 
 "colorscheme NeoSolarized
