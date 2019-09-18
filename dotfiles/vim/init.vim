@@ -283,13 +283,10 @@ autocmd BufRead,BufNewFile nginx-*.conf set filetype=nginx
 " Prettier "
 """"""""""""
 " Run Prettier on save and when leaving the insert mode
-" autocmd BufWritePre,InsertLeave *.js Neoformat
-" autocmd BufWritePre,InsertLeave *.vue Neoformat
 let g:ale_fixers = {
 \   'javascript': ['prettier'],
 \   'typescript': ['prettier'],
 \   'vue': ['prettier'],
 \   'css': ['prettier'],
 \}
-let g:ale_linters_explicit = 1
 let g:ale_fix_on_save = 1
