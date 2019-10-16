@@ -118,6 +118,7 @@ Plug 'rhysd/vim-grammarous'     " Grammar checking
 Plug 'majutsushi/tagbar'
 Plug 'junegunn/vim-easy-align'   " To make markdown table
 Plug 'w0rp/ale'
+Plug 'tomtom/tcomment_vim'
 
 " Deoplete is an asynchronous completion framework
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
