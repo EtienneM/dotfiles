@@ -58,3 +58,6 @@
   gpgsign = true
 [protocol]
 	version = 2
+[diff]
+  # Remove the silly prefix "a/" and "b/" when git diff
+	noprefix = true
