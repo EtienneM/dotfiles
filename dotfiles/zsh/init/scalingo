@@ -58,5 +58,6 @@ alias lpst='lpass status'
 alias pr_john="hub pull-request --labels=reviewable --reviewer=johnsudaar"
 alias pr_leo="hub pull-request --labels=reviewable --reviewer=Soulou"
 alias pr_yann="hub pull-request --labels=reviewable --reviewer=yannski"
+alias pr_brandon="hub pull-request --labels=reviewable --reviewer=brandon-welsch"
 alias pr_draft="hub pull-request --draft"
 alias pr_wip="pr_draft"
