@@ -122,7 +122,7 @@ Plug 'tomtom/tcomment_vim'
 
 " Deoplete is an asynchronous completion framework
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'zchee/deoplete-go', { 'do': 'make'}
+Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
 Plug 'fishbullet/deoplete-ruby'
 
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
