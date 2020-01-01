@@ -1,0 +1,32 @@
+#!/bin/bash
+
+set -e
+
+if [[ $# -ne 1 ]]; then
+  echo "Wrong number of argument" >&2
+  echo "Usage: $0 video_file"
+  echo ""
+  echo "With video_file the path to a file like mkv which embeds the subtitles"
+  exit -1
+fi
+
+which ffmpeg > /dev/null
+if [[ $? -ne 0 ]]; then
+  echo "You need to install ffmpeg (https://ffmpeg.org/download.html) to make use of this script."
+  exit -1
+fi
+
+which catt > /dev/null
+if [[ $? -ne 0 ]]; then
+  echo "You need to install catt (https://github.com/skorokithakis/catt#installation) to make use of this script."
+  exit -1
+fi
+
+subtitles=$(mktemp --suffix=.srt --dry-run)
+
+echo "Extract subtitle from the video file"
+# From https://trac.ffmpeg.org/wiki/ExtractSubtitles
+ffmpeg -loglevel warning -txt_format text -i "$1" "$subtitles"
+
+echo "End of subtitle extraction, start to cast the video file"
+catt cast --subtitles "$subtitles" "$1"
