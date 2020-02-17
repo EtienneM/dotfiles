@@ -12,5 +12,26 @@ alias pr="hub pull-request"
 alias git=hub
 alias cat=bat
 
+# Docker Compose
+alias dc="docker-compose"
+alias dcu="docker-compose up"
+alias dcd="docker-compose down"
+
+# LastPass
+alias lp='lpass'
+alias lpl='lpass login etienne@scalingo.com'
+alias lpls='lpass ls'
+alias lclip='lpass show -G --password --clip'
+alias lpsh='lpass show -G'
+alias lpst='lpass status'
+
 # Typo
 alias gti=git
+
+# Scalingo-specific
+source $SCALINGO_HOME/tools-and-hacks/zsh/scalingo
+
+alias docker_clean="docker ps -a -q --filter=\"status=exited\" --filter=\"status=created\" | xargs docker rm"
+alias scavpn="cd ~/.scalingo/vpn_scalingo_agora_hosting && sudo openvpn --config etienne@vpn-internal-1.scalingo.com.ovpn"
+alias cm='cd $SCALINGO_HOME && manager'
+alias grc='grc --stdout --stderr'

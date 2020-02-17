@@ -83,10 +83,9 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
-source ~/.zsh/init/alias
 source ~/.zsh/init/env
+source ~/.zsh/init/alias
 
-source ~/.zsh/init/scalingo
 source ~/.bin/tmuxinator.zsh
 
 if [[ -d $HOME/.scalingo ]]; then
