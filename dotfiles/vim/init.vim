@@ -117,7 +117,11 @@ Plug 'airblade/vim-gitgutter'   " Display marker in front of modified lines
 Plug 'rhysd/vim-grammarous'     " Grammar checking
 Plug 'majutsushi/tagbar'
 Plug 'junegunn/vim-easy-align'   " To make markdown table
-Plug 'w0rp/ale'
+" I replaced ALE with Neomake which successfully display the error message in Go
+" file. But I might need to do some configuration to run Prettier on save on JS
+" files.
+" Plug 'w0rp/ale'
+Plug 'neomake/neomake'
 Plug 'tomtom/tcomment_vim'
 
 " Deoplete is an asynchronous completion framework
@@ -284,10 +288,18 @@ autocmd BufRead,BufNewFile nginx-*.conf set filetype=nginx
 " Prettier "
 """"""""""""
 " Run Prettier on save and when leaving the insert mode
-let g:ale_fixers = {
-\   'javascript': ['prettier'],
-\   'typescript': ['prettier'],
-\   'vue': ['prettier'],
-\   'css': ['prettier'],
-\}
-let g:ale_fix_on_save = 1
+" let g:ale_fixers = {
+" \   'javascript': ['prettier'],
+" \   'typescript': ['prettier'],
+" \   'vue': ['prettier'],
+" \   'css': ['prettier'],
+" \}
+" let g:ale_fix_on_save = 1
+
+"""""""""""
+" Neomake "
+"""""""""""
+let g:neomake_ruby_enabled_makers = ['rubocop', 'mri']
+highlight NeomakeVirtualtextError guifg=red
+" Start Neomake on save
+autocmd! BufWritePost * Neomake
