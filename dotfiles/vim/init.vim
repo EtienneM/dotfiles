@@ -155,6 +155,7 @@ let g:neosolarized_contrast = "low"
 " Max text width is 80 for markdown files.
 " For an unkown reason these type of files do not use the global settings.
 " Probably because of a plugin...
+" Get an opened file FileType with the command `set ft?`
 au FileType markdown setlocal textwidth=80
 au FileType sh setlocal textwidth=120
 au FileType pullrequest setlocal textwidth=0
