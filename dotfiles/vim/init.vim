@@ -75,6 +75,10 @@ map <C-l>a zg
   " \x closes the quick fix window
 nmap <leader>q :cclose<CR>
 
+" Display comments in italic
+" https://rsapkf.netlify.com/blog/enabling-italics-vim-tmux
+" highlight Comment cterm=italic
+
 """""""""""
 " SPACING "
 """""""""""
@@ -127,7 +131,7 @@ Plug 'tomtom/tcomment_vim'
 " Deoplete is an asynchronous completion framework
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
-Plug 'fishbullet/deoplete-ruby'
+" Plug 'fishbullet/deoplete-ruby'
 
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'ngmy/vim-rubocop'
@@ -139,7 +143,7 @@ Plug 'sheerun/vim-polyglot'
 " Plug 'lervag/vimtex'             " LaTeX
 " Plug 'mdempsky/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
 " Plug 'jodosha/vim-godebug'
-" Plug 'hashivim/vim-terraform'
+Plug 'hashivim/vim-terraform'
 " Plug 'posva/vim-vue'
 " Plug 'pangloss/vim-javascript'
 call plug#end()
