@@ -156,6 +156,7 @@ let g:neosolarized_contrast = "low"
 " For an unkown reason these type of files do not use the global settings.
 " Probably because of a plugin...
 au FileType markdown setlocal textwidth=80
+au FileType sh setlocal textwidth=120
 
 """""""
 " ALE "
