@@ -157,6 +157,7 @@ let g:neosolarized_contrast = "low"
 " Probably because of a plugin...
 au FileType markdown setlocal textwidth=80
 au FileType sh setlocal textwidth=120
+au FileType pullrequest setlocal textwidth=0
 
 """""""
 " ALE "
