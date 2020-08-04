@@ -8,7 +8,7 @@
 [user]
   name = Étienne Michon
   email = etienne@scalingo.com
-  signingkey = 3D0A46951838A869
+  signingkey = F32DFBF936DE02AA
 
 # https://github.com/so-fancy/diff-so-fancy
 [pager]
