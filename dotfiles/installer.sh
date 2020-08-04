@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#set -x
+# set -x
 set -o nounset
 
 if [ $# -gt 1 ]; then

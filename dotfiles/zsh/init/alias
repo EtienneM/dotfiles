@@ -10,7 +10,6 @@ alias pr="hub pull-request"
 
 # Better tools
 alias git=hub
-alias cat=bat
 
 # Docker Compose
 alias dc="docker-compose"
