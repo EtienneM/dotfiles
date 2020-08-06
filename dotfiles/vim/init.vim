@@ -110,42 +110,38 @@ map <C-j> gq
 " PLUGIN  "
 """""""""""
 call plug#begin()
+Plug 'neomake/neomake' " asynchronously run programs
+
 Plug 'itchyny/lightline.vim'
 Plug 'iCyMind/NeoSolarized'
 Plug 'chriskempson/base16-vim'
 
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'scrooloose/nerdtree'
-Plug 'mileszs/ack.vim'          " Grep into a project source code
 Plug 'airblade/vim-gitgutter'   " Display marker in front of modified lines
-Plug 'rhysd/vim-grammarous'     " Grammar checking
-Plug 'majutsushi/tagbar'
-Plug 'junegunn/vim-easy-align'   " To make markdown table
-" I replaced ALE with Neomake which successfully display the error message in Go
-" file. But I might need to do some configuration to run Prettier on save on JS
-" files.
-" Plug 'w0rp/ale'
-Plug 'neomake/neomake'
-Plug 'tomtom/tcomment_vim'
+Plug 'tomtom/tcomment_vim' " file-type sensible comments
 
 " Deoplete is an asynchronous completion framework
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
-" Plug 'fishbullet/deoplete-ruby'
+" Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
+" " Plug 'fishbullet/deoplete-ruby'
 
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
-Plug 'ngmy/vim-rubocop'
-Plug 'tpope/vim-rails'
-Plug 'spacewander/openresty-vim'
-Plug 'sheerun/vim-polyglot'
+" Plug 'ngmy/vim-rubocop'
+" Plug 'tpope/vim-rails'
+" Plug 'spacewander/openresty-vim'
+" Plug 'sheerun/vim-polyglot'
+" " Plug 'gabrielelana/vim-markdown'
+" Plug 'hashivim/vim-terraform'
+" " Plug 'posva/vim-vue'
+" " Plug 'pangloss/vim-javascript'
 
-" Plug 'gabrielelana/vim-markdown'
-" Plug 'lervag/vimtex'             " LaTeX
-" Plug 'mdempsky/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
-" Plug 'jodosha/vim-godebug'
-Plug 'hashivim/vim-terraform'
-" Plug 'posva/vim-vue'
-" Plug 'pangloss/vim-javascript'
+" I don't find any more use for the following plugins but I used to use them.
+" May be useful in the future.
+" Plug 'scrooloose/nerdtree'      " Filesystem tree
+" Plug 'mileszs/ack.vim'          " Grep into a project source code
+" Plug 'rhysd/vim-grammarous'     " Grammar checking
+" Plug 'majutsushi/tagbar'        " Ctags integration
+" Plug 'junegunn/vim-easy-align'  " To make markdown table
 call plug#end()
 
 "colorscheme NeoSolarized
@@ -153,7 +149,7 @@ colorscheme base16-default-dark
 let g:neosolarized_contrast = "low"
 
 " Max text width is 80 for markdown files.
-" For an unkown reason these type of files do not use the global settings.
+" For an unknown reason these type of files do not use the global settings.
 " Probably because of a plugin...
 " Get an opened file FileType with the command `set ft?`
 au FileType markdown setlocal textwidth=80
