@@ -1,3 +1,4 @@
+# vi: ft=zsh
 alias l='ls -CF'
 alias ls='ls -h --color=auto'
 alias ll='ls -l'
@@ -8,21 +9,10 @@ alias tailf="tail -f"
 alias 2bbcode="/opt/2bbcode/2bbcode_phpbb"
 alias pr="hub pull-request"
 
-# Better tools
-alias git=hub
-
 # Docker Compose
 alias dc="docker-compose"
 alias dcu="docker-compose up"
 alias dcd="docker-compose down"
-
-# LastPass
-alias lp='lpass'
-alias lpl='lpass login etienne@scalingo.com'
-alias lpls='lpass ls'
-alias lclip='lpass show -G --password --clip'
-alias lpsh='lpass show -G'
-alias lpst='lpass status'
 
 # Typo
 alias gti=git

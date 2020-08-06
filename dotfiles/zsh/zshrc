@@ -51,7 +51,7 @@ export SAVEHIST=1000000000
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ruby rails bundler command-not-found docker sudo gem rbenv docker-compose zsh-autosuggestions golang colored-man-pages)
+plugins=(git gitfast github ruby rails bundler command-not-found docker sudo gem rbenv docker-compose zsh-autosuggestions golang colored-man-pages)
 
 # User configuration
 
