@@ -9,7 +9,7 @@ export SCALINGO_GOPATH=$GOPATH/src/github.com/Scalingo
 export DOCKER_VOLUMES_PATH=/var/lib/docker/volumes
 
 export PATH="$HOME/.rbenv/bin:$HOME/.bin:$PATH"
-export PATH="$GOPATH/bin:$PATH"
+export PATH="/usr/local/go/bin:$GOPATH/bin:$PATH"
 
 # The `hub` config file is generated after a successful connection to GitHub using the `hub` CLI
 # tool.
