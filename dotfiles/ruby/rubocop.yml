@@ -13,7 +13,9 @@ FrozenStringLiteralComment:
   Enabled: false
 Documentation:
   Enabled: false
-TrailingCommaInLiteral:
+TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: consistent_comma
 TrailingCommaInArguments:
   EnforcedStyleForMultiline: consistent_comma
@@ -25,6 +27,9 @@ SymbolArray:
   EnforcedStyle: brackets
 WordArray:
   EnforcedStyle: brackets
+RegexpLiteral:
+  EnforcedStyle: mixed
+  AllowInnerSlashes: true
 ClassAndModuleChildren:
   EnforcedStyle: compact
 AbcSize:
@@ -34,4 +39,10 @@ CyclomaticComplexity:
 NumericPredicate:
   EnforcedStyle: comparison
 ConditionalAssignment:
+  Enabled: false
+PerceivedComplexity:
+  Max: 10
+AsciiComments:
+  Enabled: false
+MethodParameterName:
   Enabled: false
