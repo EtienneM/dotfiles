@@ -57,3 +57,7 @@ vlc .config/vlc
 
 # htop
 htoprc .config/htop/htoprc
+
+# Firefox
+# This is the custom dictionary
+firefox/persdict.dat .mozilla/firefox/*.default-release/persdict.dat
