@@ -126,12 +126,13 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " " Plug 'fishbullet/deoplete-ruby'
 
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+" Requires Terraform to be installed
+Plug 'hashivim/vim-terraform'
 " Plug 'ngmy/vim-rubocop'
 " Plug 'tpope/vim-rails'
 " Plug 'spacewander/openresty-vim'
 " Plug 'sheerun/vim-polyglot'
 " " Plug 'gabrielelana/vim-markdown'
-" Plug 'hashivim/vim-terraform'
 " " Plug 'posva/vim-vue'
 " " Plug 'pangloss/vim-javascript'
 
