@@ -153,7 +153,7 @@ let g:neosolarized_contrast = "low"
 " For an unknown reason these type of files do not use the global settings.
 " Probably because of a plugin...
 " Get an opened file FileType with the command `set ft?`
-au FileType markdown setlocal textwidth=80
+au FileType markdown setlocal textwidth=0
 au FileType sh setlocal textwidth=120
 au FileType pullrequest setlocal textwidth=0
 au FileType dockerfile setlocal textwidth=0
