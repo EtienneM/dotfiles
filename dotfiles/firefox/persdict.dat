@@ -21,6 +21,7 @@ HAProxy
 CNAME
 t'entrainer
 DHCP
+StatusCake
 Scalingo
 Yubico
 APM
