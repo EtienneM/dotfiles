@@ -29,5 +29,4 @@ root: ~/Documents/Scalingo
 #
 
 windows:
-  - priority: nvim $SCALINGO_HOME/priority.md
   - LinK: cd $SCALINGO_GOPATH/link && sudo ./start.sh
