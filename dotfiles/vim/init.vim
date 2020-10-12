@@ -119,6 +119,7 @@ Plug 'chriskempson/base16-vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'airblade/vim-gitgutter'   " Display marker in front of modified lines
 Plug 'tomtom/tcomment_vim' " file-type sensible comments
+Plug 'junegunn/vim-easy-align'  " To make markdown table
 
 " Deoplete is an asynchronous completion framework
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -142,16 +143,13 @@ Plug 'hashivim/vim-terraform'
 " Plug 'mileszs/ack.vim'          " Grep into a project source code
 " Plug 'rhysd/vim-grammarous'     " Grammar checking
 " Plug 'majutsushi/tagbar'        " Ctags integration
-" Plug 'junegunn/vim-easy-align'  " To make markdown table
 call plug#end()
 
 "colorscheme NeoSolarized
 colorscheme base16-default-dark
 let g:neosolarized_contrast = "low"
 
-" Max text width is 80 for markdown files.
-" For an unknown reason these type of files do not use the global settings.
-" Probably because of a plugin...
+" Configure the max text width depending on the file type.
 " Get an opened file FileType with the command `set ft?`
 au FileType markdown setlocal textwidth=0
 au FileType sh setlocal textwidth=120
