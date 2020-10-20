@@ -21,6 +21,7 @@ tmux/tmux.conf  .tmux.conf
 tmux/tmuxinator .tmuxinator
 
 # Git
+git/gitattributes .gitattributes
 git/gitconfig .gitconfig
 git/gitignore .gitignore
 

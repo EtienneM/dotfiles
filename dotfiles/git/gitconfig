@@ -50,6 +50,7 @@
 [core]
   editor = nvim
   excludesfile = /home/emichon/.gitignore
+  attributesfile = /home/emichon/.gitattributes
 [push]
   default = simple
 [url "git@github.com:"]
@@ -60,6 +61,6 @@
 	version = 2
 [diff]
   # Remove the silly prefix "a/" and "b/" when git diff
-	noprefix = true
+  noprefix = true
 [pull]
-	rebase = false
+  rebase = false
