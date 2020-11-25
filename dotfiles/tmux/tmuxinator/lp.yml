@@ -1,8 +1,8 @@
 # ~/.tmuxinator/dev.yml
 
 name: LP
-root: ~/Documents/repositories/tp-cdad-2018
+root: ~/Documents/repositories/resizer
 
 windows:
-  - docker: cd ~/Documents/repositories/tp-cdad-2018 && dcu
-  - base: cd ~/Documents/repositories/tp-cdad-2018
+  - docker: cd ~/Documents/repositories/resizer && dcu
+  - base: cd ~/Documents/repositories/resizer
