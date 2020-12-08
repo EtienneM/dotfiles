@@ -43,7 +43,7 @@ nnoremap <leader>n :nohlsearch<CR>
   "I'm pretty sure this makes wrapped lines break at spaces, not in the middle of words:
 set linebreak
   " Insert a new line after textwidth characters
-set textwidth=80
+set textwidth=0
 
   "I like to see line numbers:
 set number
@@ -152,7 +152,7 @@ let g:neosolarized_contrast = "low"
 " Configure the max text width depending on the file type.
 " Get an opened file FileType with the command `set ft?`
 au FileType markdown setlocal textwidth=0
-au FileType sh setlocal textwidth=120
+au FileType sh setlocal textwidth=0
 au FileType pullrequest setlocal textwidth=0
 au FileType dockerfile setlocal textwidth=0
 
