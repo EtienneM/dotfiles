@@ -1,8 +1,9 @@
 # ~/.tmuxinator/dev.yml
 
 name: LP
-root: ~/Documents/repositories/resizer
+root: ~/Documents/repositories/resizer-corrige
 
 windows:
-  - docker: cd ~/Documents/repositories/resizer && dcu
-  - base: cd ~/Documents/repositories/resizer
+  - resizer-corrige: cd ~/Documents/repositories/resizer-corrige
+  - johnsudaar-resizer: cd ~/Documents/repositories/johnsudaar-resizer
+  - my-resizer: cd ~/Documents/repositories/resizer
