@@ -47,6 +47,7 @@
   idff = diff
   dfif = diff
   upll = pull
+  upsh = push
 [core]
   editor = nvim
   excludesfile = /home/emichon/.gitignore
