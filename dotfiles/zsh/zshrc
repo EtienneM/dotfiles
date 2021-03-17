@@ -86,7 +86,7 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 source ~/.zsh/init/env
 source ~/.zsh/init/alias
 
-source ~/.bin/tmuxinator.zsh
+[[ -f ~/.bin/tmuxinator.zsh ]] && source ~/.bin/tmuxinator.zsh
 
 if [[ -d $HOME/.scalingo ]]; then
 	[[ -f $HOME/.scalingo/tokens-dev.sh ]] && source $HOME/.scalingo/tokens-dev.sh

@@ -1,5 +1,8 @@
 # vim: filetype=zsh
 
+if [[ ! -d $HOME/.zsh/completions ]]; then
+  return
+fi
 for f in $HOME/.zsh/completions/*; do
   source $f
 done

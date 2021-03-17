@@ -18,7 +18,7 @@ alias dcd="docker-compose down"
 alias gti=git
 
 # Scalingo-specific
-source $SCALINGO_HOME/tools-and-hacks/zsh/scalingo
+[[ -f $SCALINGO_HOME/tools-and-hacks/zsh/scalingo ]] && source $SCALINGO_HOME/tools-and-hacks/zsh/scalingo
 
 alias docker_clean="docker ps -a -q --filter=\"status=exited\" --filter=\"status=created\" | xargs docker rm"
 alias scavpn="cd ~/.scalingo/vpn_scalingo_agora_hosting && sudo openvpn --config etienne@vpn-internal-1.scalingo.com.ovpn"

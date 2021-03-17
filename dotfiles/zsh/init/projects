@@ -3,6 +3,10 @@
 PROJECTS_PATHS=($GOPATH/src/github.com/Scalingo $HOME/Documents/Scalingo $GOPATH/src/github.com/EtienneM $HOME/Documents/repositories)
 
 for project_path in $PROJECTS_PATHS ; do
+  if [[ ! -d $project_path ]]; then
+    continue
+  fi
+
   for project in $(ls $project_path); do
     alias $project="tmux rename-window $project ; $project_path/$project"
   done
