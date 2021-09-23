@@ -223,7 +223,7 @@ let g:go_highlight_methods = 1
 let g:go_fmt_command = "goimports"
 let g:go_fmt_options = {
   \ 'gofmt': '-s',
-  \ 'goimports': '',
+  \ 'goimports': '-local github.com/Scalingo',
   \ }
 let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
 " The following lines are now handled asynchronously by Neomake
