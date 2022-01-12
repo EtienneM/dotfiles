@@ -4,3 +4,5 @@
 --ignore-dir=vendor
 # Ignore the tmp directory as it contains generated code in Ember.JS projects
 --ignore-dir=tmp
+# Ignore the local Go cache directory
+--ignore-dir=_dev/go-cache
