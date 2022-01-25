@@ -379,3 +379,6 @@ OOS
 crontab
 MiB
 SourceForge
+GDAL
+WSGI
+ASGI
