@@ -122,6 +122,7 @@ entrainements
 Jira
 Maxime
 SSL
+Dart
 SCM
 endpoint
 bugfixes
@@ -147,6 +148,7 @@ Strapi
 MongoDB
 stack
 HDS
+Flutter
 FNAC
 Logstash
 OAuth
