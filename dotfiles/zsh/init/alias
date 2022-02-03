@@ -24,7 +24,3 @@ alias docker_clean="docker ps -a -q --filter=\"status=exited\" --filter=\"status
 alias scavpn="cd ~/.scalingo/vpn_scalingo_agora_hosting && sudo openvpn --config etienne@vpn-internal-1.scalingo.com.ovpn"
 alias cm='cd $SCALINGO_HOME && manager'
 alias grc='grc --stdout --stderr'
-
-# Go test
-alias gotest="grc docker-compose exec test go test -race -p=1"
-alias gotest_nocache="grc docker-compose exec test go test -count=1 -race -p=1"
