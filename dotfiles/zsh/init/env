@@ -9,6 +9,7 @@ export BUILDPACKS_PATH="$SCALINGO_HOME/appsdeck-builder/buildpacks"
 # Mandatory for the deploy-gem
 export DOCKER_VOLUMES_PATH=/var/lib/docker/volumes
 
+export PATH="$HOME/.tfenv/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$HOME/.bin:$PATH"
 export PATH="/usr/local/go/bin:$GOPATH/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
