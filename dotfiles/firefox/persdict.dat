@@ -6,7 +6,6 @@ Lua
 Belco
 Vianavigo
 nginx
-Anouchka
 Papertrail
 linters
 Metabase
@@ -15,6 +14,7 @@ WALs
 débloquage
 oplog
 Outscale
+j'te
 Basecamp
 d'entrainement
 client-to-site
@@ -110,7 +110,6 @@ Packer
 OVH
 OBS
 entraine
-EPITA
 EOL
 VMs
 Ansible
@@ -374,10 +373,10 @@ provisioning
 OAuth
 plait
 Sendinblue
+J'comprends
 UFS
 JSONB
 PRISM
-LinkedIn
 BloomRPC
 failover
 phpMyAdmin
