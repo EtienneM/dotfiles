@@ -15,8 +15,4 @@ export PATH="/usr/local/go/bin:$GOPATH/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 [[ -d "$SCALINGO_HOME/tools-and-hacks/strongswan" ]] && export PATH="$SCALINGO_HOME/tools-and-hacks/strongswan:$PATH"
 
-# The `hub` config file is generated after a successful connection to GitHub using the `hub` CLI
-# tool.
-[[ -f ~/.config/hub ]] && export GITHUB_TOKEN=$(grep auth_token ~/.config/hub | cut -d':' -f2 | tr -d ' ')
-
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(nvim {})+abort'"

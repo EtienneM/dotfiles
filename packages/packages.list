@@ -5,7 +5,6 @@
 git,git
 gitg,gitg
 ,bzr
-,hub
 
 # Text editor
 ,atom
