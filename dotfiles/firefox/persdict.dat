@@ -27,13 +27,13 @@ meetup
 CDNTech
 PFE
 Haroun
-Websockets
 PECL
 VPC
 one-off
 règlementaire
 Adminer
 downsample
+Kibana
 rubyists
 responder
 Jancovici
@@ -49,6 +49,7 @@ CS
 Django
 DevOps
 FaaS
+OpenSearch
 MySQL
 GeoGebra
 TLS
@@ -66,7 +67,7 @@ Praefect
 Rivétoile
 Markdown
 OMI
-BenL
+LVM
 Backend
 Baleen
 Akbaraly
@@ -96,7 +97,7 @@ l'addon
 RSSI
 Symfony
 CSV
-feedbacks
+Tchouki
 Downsampling
 WordPress
 Zsh
@@ -112,6 +113,7 @@ Packer
 OVH
 OBS
 entraine
+ANSSI
 EPITA
 EOL
 VMs
@@ -154,7 +156,7 @@ McDonald's
 REST
 addons
 Nextcloud
-ORM
+SEO
 Menora
 Jira
 DHCP
@@ -211,7 +213,7 @@ PCR
 CenturyLink
 SDRs
 TSDB
-Kibana
+CrossFit
 Schlo
 entrainements
 Mailchimp
@@ -233,11 +235,12 @@ Bliard
 IdFM
 GitLab
 downsampling
-CrossFit
+Websockets
 endpoint
 downtimes
 inode
 Grej
+feedbacks
 Grafana
 DNS
 Thales
@@ -268,7 +271,6 @@ GPG
 backups
 covid
 PowerShell
-LVM
 LUKS
 volumetry
 Ribeauvillé
@@ -292,7 +294,7 @@ Méderic
 Illkirch
 Scaleway
 OOS
-CLIMESPACE
+OpenJDK
 OTP
 Théo
 Neufeld
@@ -333,7 +335,7 @@ LogTrail
 etcd
 weekend
 Wireshark
-ANSSI
+ORM
 merger
 OKRs
 BSPCE
@@ -363,6 +365,7 @@ middleware
 datacenter
 connaitre
 buildpack
+BenL
 Traefik
 WIP
 L'entrainement
@@ -377,7 +380,6 @@ MCO
 Soulou
 Atolia
 ToS
-Tchouki
 Biocoop
 Intercom
 provisioning
@@ -402,5 +404,5 @@ strongSwan
 Hakan
 SRE
 OCTO
-SEO
+CLIMESPACE
 keepalived
