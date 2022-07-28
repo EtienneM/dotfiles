@@ -55,7 +55,7 @@ plugins=(git gitfast github ruby rails bundler command-not-found docker sudo gem
 
 # User configuration
 
-# export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+export PATH="/snap/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
