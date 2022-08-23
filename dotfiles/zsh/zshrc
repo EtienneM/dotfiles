@@ -105,3 +105,6 @@ source ~/.zsh/init/functions
 
 # added by travis gem
 [ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
+
+# This is useful to make the git commit signed with GPG on the YubiKey works
+export GPG_TTY=$(tty)
