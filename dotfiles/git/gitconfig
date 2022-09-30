@@ -48,6 +48,7 @@
   upll = pull
   pul = pull
   upsh = push
+  pukll = pull
 [core]
   editor = nvim
   excludesfile = /home/emichon/.gitignore
