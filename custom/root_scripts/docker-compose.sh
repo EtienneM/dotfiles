@@ -1,22 +1,12 @@
 #!/bin/bash
 
-version=1.15.0
+version=v2.10.2
+docker_config=/usr/local/lib/docker
 
-if [ -f /usr/local/bin/docker-compose ] ; then
-  docker-compose --version | grep "$version" > /dev/null
-  if [ $? -eq 0 ]; then
-    log "Docker-compose already installed. Skipping..."
-    exit 0
-  fi
-fi
+sudo mkdir -p "${docker_config}/cli-plugins"
 
-log "Downloading docker-compose version $version"
-curl -sL https://github.com/docker/compose/releases/download/$version/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
-
+sudo curl -SL https://github.com/docker/compose/releases/download/${version}/docker-compose-linux-x86_64 -o $docker_config/cli-plugins/docker-compose
 failFast $? "Fail to download docker-compose"
 
-chmod +x /usr/local/bin/docker-compose
-
+sudo chmod +x "${docker_config}/cli-plugins/docker-compose"
 failFast $? "Fail to update docker-compose rights"
-
-success "docker-compose installed."
