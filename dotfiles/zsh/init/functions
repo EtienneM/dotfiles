@@ -1,3 +1,10 @@
+# Nice UI to display the weather forecast
+# https://github.com/chubin/wttr.in
+function meteo() {
+  city=${1:-Strasbourg}
+  curl https://wttr.in/${city}\?lang\=fr\&F
+}
+
 # Simple calculator
 # From https://github.com/addyosmani/dotfiles/blob/master/.functions#L1-L17
 function calc() {
