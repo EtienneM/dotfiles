@@ -100,7 +100,6 @@ source ~/.zsh/init/autocomplete
 bindkey ^W forward-word
 
 source ~/.zsh/init/startup
-source ~/.zsh/init/projects
 source ~/.zsh/init/functions
 
 # added by travis gem
