@@ -136,6 +136,10 @@ Plug 'hashivim/vim-terraform'
 " " Plug 'gabrielelana/vim-markdown'
 " " Plug 'posva/vim-vue'
 " " Plug 'pangloss/vim-javascript'
+"
+
+" Easily move around in the code
+Plug 'ggandor/leap.nvim'
 
 " I don't find any more use for the following plugins but I used to use them.
 " May be useful in the future.
@@ -310,3 +314,8 @@ let g:neomake_ruby_enabled_makers = ['rubocop', 'mri']
 highlight NeomakeVirtualtextError guifg=red
 " Start Neomake on save
 autocmd! BufWritePost * Neomake
+
+""""""""
+" Leap "
+""""""""
+" require('leap').set_default_keymaps()
