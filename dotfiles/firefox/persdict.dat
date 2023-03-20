@@ -31,6 +31,7 @@ FQDN
 DatoCMS
 Alaa
 meetup
+SITM
 CDNTech
 PFE
 Haroun
@@ -50,17 +51,18 @@ Hiptest
 IoT
 TimescaleDB
 CIM
+ultimate
 Gandi
 Théo’s
 CS
 Django
 DevOps
 FaaS
+d'IPsec
 OpenSearch
 MySQL
 InfluxData
 rafraichissez
-Philae
 TLS
 Etrépagny
 systemd
@@ -69,7 +71,6 @@ OSU
 Scalingo's
 backport
 UDP
-GraphQL
 SSL
 d'ImageMagick
 WAL
@@ -81,6 +82,7 @@ Rivétoile
 Markdown
 OMI
 MinIO
+semver
 BenL
 Backend
 Baleen
@@ -88,7 +90,7 @@ Akbaraly
 Tsunamixte
 LTS
 Rollbar
-Mattermost
+etcd
 Richarme
 BGP
 hypertable
@@ -100,13 +102,14 @@ AES
 npm
 Île-de-France
 INSEE
+Batman
 Unbekandt
 TypeScript
 Clément
 Lucidchart
-SQLite
 l'addon
 RSSI
+VMware
 Symfony
 CSV
 MessagePack
@@ -133,6 +136,7 @@ EPITA
 EOL
 VMs
 AppSignal
+CNCF
 Ansible
 XPS
 Procfile
@@ -162,7 +166,7 @@ Garnier
 Tchungle
 ProtonVPN
 Keepalived
-SITM
+CNAME
 t'entrainer
 OpenSSH
 dashboard
@@ -189,6 +193,7 @@ Studo
 Elasticsearch
 datacenters
 InnoDB
+Mattermost
 InfluxDB
 PostGIS
 goroutines
@@ -197,7 +202,7 @@ Remmina
 Rayman
 nsq
 PHPDoc
-voute
+AWS
 Scalingo
 chaine
 Yubico
@@ -206,7 +211,7 @@ Pokaa
 BPI
 PromQL
 APM
-pentesting
+OpenStack
 PRA
 cron
 Blackfire
@@ -214,7 +219,7 @@ Strapi
 Promscale
 MongoDB
 stack
-ComOp
+HDS
 Flutter
 FNAC
 Logstash
@@ -225,6 +230,7 @@ BSR
 entrainons
 Pix
 Neudorf
+TLD
 UX
 plait
 Heroku
@@ -232,7 +238,7 @@ Diss
 Schlo
 SFR
 PCR
-ultimate
+CenturyLink
 SDRs
 TSDB
 CrossFit
@@ -248,10 +254,9 @@ Laravel
 GCP
 Aravind
 j’me
+LinkedIn
 onboarded
 hypertables
-Spark
-GitLab
 VPNC
 BloomRPC
 Sylvain
@@ -263,11 +268,11 @@ Galach
 Datadog
 dnsmasq
 Bliard
-Trello
 IdFM
-etcd
+GitLab
 Redis
 Syntec
+voute
 Websockets
 endpoint
 downtimes
@@ -277,6 +282,8 @@ feedbacks
 Grafana
 DNS
 Thales
+AngularJS
+ComOp
 replayable
 GraphicsMagick
 indoor
@@ -301,7 +308,7 @@ GPG
 CodeIgniter
 VRRP
 backups
-CNAME
+covid
 PowerShell
 LVM
 LUKS
@@ -315,14 +322,14 @@ Gérardmer
 Addon
 Slack
 Stefania
-AngularJS
+CSE
 PoC
+WireGuard
 Michon
 d'InfluxDB
 websocket
 Biscarrosse
 J'me
-covid
 gouter
 InfoSec
 Hakan
@@ -338,6 +345,7 @@ WUCC
 l'ultimate
 Dependabot
 Reddit
+VLC
 LinK
 TCP
 d'Elasticsearch
@@ -349,6 +357,7 @@ DBaaS
 maitrisé
 Thumbor
 Ced
+pentesting
 3DS Outscale
 Spotify
 OCTO
@@ -362,7 +371,6 @@ lockdown
 OpenResty
 FranceConnect
 Devoxx
-AWS
 d'ultimate
 PostgreSQL
 Sébastien
@@ -370,14 +378,15 @@ d'IST
 l'Ill
 LogTrail
 FNI
+VXLAN
 weekend
 Wireshark
 ORM
 merger
 OKRs
 BSPCE
-semver
-Batman
+Spark
+Nextcloud
 TDD
 TSBS
 VPN
@@ -398,7 +407,8 @@ Siham
 Nginx
 IST
 pgBackRest
-HDS
+GraphQL
+MTU
 PiTR
 middleware
 downsampling
@@ -409,7 +419,7 @@ Traefik
 WIP
 linters
 SSH
-CenturyLink
+Philae
 Telegraf
 Bash
 d'Outscale
@@ -432,10 +442,12 @@ Sendinblue
 UFS
 JSONB
 SaaS
+eBPF
 PRISM
+vCenter
 linter
-LinkedIn
-Nextcloud
+Trello
+SQLite
 failover
 phpMyAdmin
 inodes
