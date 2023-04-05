@@ -1,61 +1,63 @@
 [advice]
-  statusHints = true
+	statusHints = true
 [color]
-  diff = auto
-  status = auto
-  branch = auto
-  ui = true
+	diff = auto
+	status = auto
+	branch = auto
+	ui = true
 [user]
-  name = Étienne Michon
-  email = etienne@scalingo.com
-  signingkey = F32DFBF936DE02AA
+	name = Étienne Michon
+	email = etienne@scalingo.com
+	signingkey = F32DFBF936DE02AA
 
 [color "diff-highlight"]
-  oldNormal = red bold
-  oldHighlight = red bold 52
-  newNormal = green bold
-  newHighlight = green bold 22
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
 [color "diff"]
-  meta = yellow
-  frag = magenta bold
-  commit = yellow bold
-  old = red bold
-  new = green bold
-  whitespace = red reverse
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
 
 [alias]
-  # Diff highlights the words diff but it's kind of weird in the terminal...
-  # diff = diff --word-diff=color
-  # Shortcuts
-  ci = commit
-  co = checkout
-  st = status
-  br = branch
-  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
-  l  = ! git lg
-  # Spellings
-  oc = co
-  emrge = merge
-  t = st
-  s = st
-  dif = diff
-  idff = diff
-  dfif = diff
-  upll = pull
-  pul = pull
-  upsh = push
-  pukll = pull
+	# Diff highlights the words diff but it's kind of weird in the terminal...
+	# diff = diff --word-diff=color
+	# Shortcuts
+	ci = commit
+	co = checkout
+	st = status
+	br = branch
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
+	l  = ! git lg
+	# Spellings
+	oc = co
+	emrge = merge
+	t = st
+	s = st
+	dif = diff
+	idff = diff
+	dfif = diff
+	upll = pull
+	pul = pull
+	upsh = push
+	pukll = pull
 [core]
-  editor = nvim
-  excludesfile = /home/emichon/.gitignore
-  attributesfile = /home/emichon/.gitattributes
+	editor = nvim
+	excludesfile = /home/emichon/.gitignore
+	attributesfile = /home/emichon/.gitattributes
 [push]
-  default = simple
+	default = simple
 [url "git@github.com:"]
-  insteadOf = https://github.com/
+	insteadOf = https://github.com/
 [commit]
-  gpgsign = true
+	gpgsign = true
 [protocol]
-  version = 2
+	version = 2
 [pull]
-  rebase = false
+	rebase = false
+[init]
+	defaultBranch = main
