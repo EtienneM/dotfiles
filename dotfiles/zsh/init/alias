@@ -23,3 +23,4 @@ alias docker_clean="docker ps -a -q --filter=\"status=exited\" --filter=\"status
 alias scavpn="cd ~/.scalingo/vpn_scalingo_agora_hosting && sudo openvpn --config etienne@vpn-internal-1.scalingo.com.ovpn"
 alias cm='cd $SCALINGO_HOME && manager'
 alias grc='grc --stdout --stderr'
+alias sc-dev-cli="cd $SCALINGO_GOPATH/scalingo-dev-cli && go run main.go $*"
