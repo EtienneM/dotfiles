@@ -51,7 +51,7 @@ export SAVEHIST=1000000000
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git gitfast github ruby rails bundler command-not-found docker sudo gem rbenv docker-compose zsh-autosuggestions golang colored-man-pages dirhistory)
+plugins=(git gitfast github ruby rails bundler command-not-found docker sudo gem rbenv docker-compose zsh-autosuggestions golang colored-man-pages dirhistory vagrant)
 
 # User configuration
 
@@ -107,3 +107,8 @@ source ~/.zsh/init/functions
 
 # This is useful to make the git commit signed with GPG on the YubiKey works
 export GPG_TTY=$(tty)
+
+# >>>> Vagrant command completion (start)
+fpath=(/opt/vagrant/embedded/gems/2.3.4/gems/vagrant-2.3.4/contrib/zsh $fpath)
+compinit
+# <<<<  Vagrant command completion (end)
