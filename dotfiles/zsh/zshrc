@@ -89,8 +89,8 @@ source ~/.zsh/init/alias
 [[ -f ~/.bin/tmuxinator.zsh ]] && source ~/.bin/tmuxinator.zsh
 
 if [[ -d $HOME/.scalingo ]]; then
-	[[ -f $HOME/.scalingo/tokens-dev.sh ]] && source $HOME/.scalingo/tokens-dev.sh
-	[[ -f $HOME/.scalingo/tokens-prod.sh ]] && source $HOME/.scalingo/tokens-prod.sh
+  [[ -f $HOME/.scalingo/tokens-dev.sh ]] && source $HOME/.scalingo/tokens-dev.sh
+  [[ -f $HOME/.scalingo/tokens-prod.sh ]] && source $HOME/.scalingo/tokens-prod.sh
 fi
 
 # Auto completions
