@@ -61,3 +61,8 @@
 	defaultBranch = main
 [merge]
 	conflictStyle = zdiff3
+[rerere]
+	# Enables rerere (https://git-scm.com/book/en/v2/Git-Tools-Rerere)
+	# which remembers how you resolved merge conflicts during a git
+	# rebase and automatically resolves conflicts for you when it can.
+	enabled = true
