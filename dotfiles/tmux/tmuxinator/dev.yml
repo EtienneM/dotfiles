@@ -29,4 +29,4 @@ root: ~/Documents/Scalingo
 #
 
 windows:
-  - LinK: cd $SCALINGO_GOPATH/link && sudo ./start.sh
+  - Scalingo: cd $SCALINGO_HOME
