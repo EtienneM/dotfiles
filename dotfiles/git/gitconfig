@@ -8,7 +8,10 @@
 [user]
 	name = Étienne Michon
 	email = etienne@scalingo.com
-	signingkey = F32DFBF936DE02AA
+	# YubiKey USB Type-A
+	# signingkey = 9A0DF2322CD448AF953EEC4BB0D5E580B920307B
+	# YubiKey USB Type-C
+	signingkey = 37EF7E6E25AD07BBA03268A394AB2E35071F480B
 
 [color "diff-highlight"]
 	oldNormal = red bold
