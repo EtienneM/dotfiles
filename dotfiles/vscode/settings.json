@@ -1,0 +1,19 @@
+{
+  "go.toolsManagement.autoUpdate": true,
+  "go.lintOnSave": "package",
+  "go.lintTool": "golangci-lint",
+  "go.lintFlags": [
+    "--config=/home/etienne/Documents/Scalingo/tools-and-hacks/ist-helpers/golang-ci/golangci.yml",
+    "--fast"
+  ],
+  "gopls": {
+    "formatting.local": "github.com/Scalingo"
+  },
+  "workbench.colorTheme": "Visual Studio Light",
+  "vim.handleKeys": {
+    "<C-s-e>": false,
+    "<C-b>": false,
+    "<C-k>": false,
+    "<C-p>": false
+  }
+}

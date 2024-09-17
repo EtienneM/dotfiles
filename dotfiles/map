@@ -37,3 +37,6 @@ vlc .config/vlc
 # Firefox
 # This is the custom dictionary
 firefox/persdict.dat snap/firefox/common/.mozilla/firefox/olvgmmsd.default/persdict.dat
+
+# VS Code
+vscode/settings.json .config/Code/User/settings.json
