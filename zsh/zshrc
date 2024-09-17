@@ -4,14 +4,8 @@
 # [...]
 # [GNUPG:] PINENTRY_LAUNCHED 988674 tty 1.1.1 not a tty tmux-256color :1 ? 1000/1000 -
 # [...]
-export GPG_TTY=$TTY
-
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+# export GPG_TTY=$TTY
+# export GPG_TTY=$(tty)
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -107,9 +101,6 @@ bindkey ^W forward-word
 
 source ~/.zsh/init/startup
 source ~/.zsh/init/functions
-
-# This is useful to make the git commit signed with GPG on the YubiKey works
-export GPG_TTY=$(tty)
 
 # >>>> Vagrant command completion (start)
 fpath=(/opt/vagrant/embedded/gems/2.3.4/gems/vagrant-2.3.4/contrib/zsh $fpath)

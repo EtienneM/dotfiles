@@ -14,8 +14,8 @@ HOME_DIR=${1-$HOME}
 BASEDIR=$(cd $(dirname $0) && pwd)
 cd $BASEDIR
 
-source $BASEDIR/../libraries/bootstrap.sh
-load $BASEDIR/../libraries
+source $BASEDIR/libraries/bootstrap.sh
+load $BASEDIR/libraries
 
 OLD_IFS=$IFS
 IFS=$'\n'
@@ -32,6 +32,9 @@ for line in $( sed -e '/^$/d' -e '/^\#.*$/d' $BASEDIR/map) ; do
   if [ -e $HOME_DIR/$dst ]; then
     info "Backup the existing file to '$HOME/$dst.bak'"
     mv $HOME/$dst $HOME/$dst.bak
+  elif [ -L $HOME_DIR/$dst ]; then
+    info "Remove the existing symbolic link"
+    rm $HOME_DIR/$dst
   fi
   ln -s $BASEDIR/$src $HOME_DIR/$dst
 done
