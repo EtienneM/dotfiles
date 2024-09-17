@@ -29,7 +29,11 @@ for line in $( sed -e '/^$/d' -e '/^\#.*$/d' $BASEDIR/map) ; do
 
   mkdir -p $HOME_DIR/$(dirname $dst)
 
-  [ ! -e $HOME_DIR/$dst ] && ln -s $BASEDIR/$src $HOME_DIR/$dst
+  if [ -e $HOME_DIR/$dst ]; then
+    info "Backup the existing file to '$HOME/$dst.bak'"
+    mv $HOME/$dst $HOME/$dst.bak
+  fi
+  ln -s $BASEDIR/$src $HOME_DIR/$dst
 done
 
 IFS=$OLD_IFS
