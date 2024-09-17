@@ -25,30 +25,8 @@ git/gitattributes .gitattributes
 git/gitconfig .gitconfig
 git/gitignore .gitignore
 
-# Ruby
-ruby/rubocop.yml .rubocop.yml
-
-# SSH
-ssh/known_hosts .ssh/known_hosts
-
-# fonts
-# TODO There is still some things to do in order to install the fonts
-fonts .fonts
-
-# Yaourt
-yaourtrc .yaourtrc
-
-# Atom
-atom/config.cson   .atom/config.cson
-atom/init.coffee   .atom/init.coffee
-atom/keymap.cson   .atom/keymap.cson
-atom/snippets.cson .atom/snippets.cson
-
 # Transmission
 transmission.json .config/transmission/settings.json
-
-# Grc
-grc .grc
 
 # Ack
 ackrc .ackrc
@@ -56,9 +34,6 @@ ackrc .ackrc
 # VLC
 vlc .config/vlc
 
-# htop
-htoprc .config/htop/htoprc
-
 # Firefox
 # This is the custom dictionary
-firefox/persdict.dat .mozilla/firefox/*.default-release/persdict.dat
+firefox/persdict.dat snap/firefox/common/.mozilla/firefox/olvgmmsd.default/persdict.dat
