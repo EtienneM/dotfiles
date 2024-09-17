@@ -109,6 +109,7 @@ map <C-j> gq
 """""""""""
 " PLUGIN  "
 """""""""""
+" With https://github.com/junegunn/vim-plug
 call plug#begin()
 Plug 'neomake/neomake' " asynchronously run programs
 
