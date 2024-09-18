@@ -14,6 +14,7 @@ export PATH="$HOME/.tfenv/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$HOME/.bin:$PATH"
 export PATH="/usr/local/go/bin:$GOPATH/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="/snap/bin:$PATH"
 [[ -d "$SCALINGO_HOME/tools-and-hacks/strongswan" ]] && export PATH="$SCALINGO_HOME/tools-and-hacks/strongswan:$PATH"
 
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(nvim {})+abort'"
