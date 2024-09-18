@@ -68,6 +68,14 @@ plugins=(command-not-found git gitfast bundler docker sudo rbenv docker-compose 
 
 source $ZSH/oh-my-zsh.sh
 
+# This is specific to the 'agnoster' theme.
+# Remove ${USER}@$(hostname) from the prompt.
+prompt_context() {
+  # Customize this part of the front with information from:
+  # https://github.com/agnoster/agnoster-zsh-theme/issues/39#issuecomment-307338817
+  # prompt_segment black default "MY TEXT"
+}
+
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
