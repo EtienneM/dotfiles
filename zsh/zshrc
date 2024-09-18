@@ -73,7 +73,7 @@ source $ZSH/oh-my-zsh.sh
 prompt_context() {
   # Customize this part of the front with information from:
   # https://github.com/agnoster/agnoster-zsh-theme/issues/39#issuecomment-307338817
-  # prompt_segment black default "MY TEXT"
+  prompt_segment $CURRENT_FG default  "🌈"
 }
 
 # You may need to manually set your language environment
