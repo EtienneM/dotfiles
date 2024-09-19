@@ -16,5 +16,6 @@
     "<C-k>": false,
     "<C-p>": false
   },
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "all"
 }
