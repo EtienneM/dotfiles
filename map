@@ -9,6 +9,7 @@ bash/bash_aliases .bash_aliases
 bash/completions  .bash_completions
 
 # ZSH
+zsh/completions  .zsh/completions
 zsh/init  .zsh/init
 zsh/zshrc .zshrc
 
